@@ -26,5 +26,5 @@ Documentation for using Vision-AI V2
 https://github.com/Seeed-Studio/Seeed_Arduino_SSCMA says to download a zip file and add the library to your Arduino IDE by selecting **Sketch > Include Library > Add .ZIP Library**
 - This seems out of date. I cannot find a *.zip file using the pointer.
 - Also the SSCMA library is now available by searching in the library manager
-  - go to **Tools > Manage Libraries.**
+  - Go to **Tools > Manage Libraries.**
   - Search for and install **Seeed_Arduino_SSCMA**
