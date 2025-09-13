@@ -7,6 +7,7 @@ Experiments using Grove Vision AI version 2 and SEEED Sensecraft
 * [Installing SSCMA Library](#installing-sscma-library "Installing SSCMA Library")
 
 ## References
+[Top](#expts_grove_vision_ai_v2 "Top")<br>
 These are to save pointers to documentation.
 
 The Vision-AI V2 module itself. Not sure why these have different prices.
@@ -21,6 +22,7 @@ Documentation for using Vision-AI V2
 - https://wiki.seeedstudio.com/No-code-Edge-AI-Tool/
 
 ## Installing SSCMA Library
+[Top](#expts_grove_vision_ai_v2 "Top")<br>
 https://github.com/Seeed-Studio/Seeed_Arduino_SSCMA says to download a zip file and add the library to your Arduino IDE by selecting **Sketch > Include Library > Add .ZIP Library**
 - This seems out of date. I cannot find a *.zip file using the pointer.
 - Also the SSCMA library is now available by searching in the library manager
