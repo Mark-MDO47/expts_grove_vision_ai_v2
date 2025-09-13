@@ -2,6 +2,9 @@
 Experiments using Grove Vision AI version 2 and SEEED Sensecraft
 
 **Table Of Contents**
+* [Top](#expts_grove_vision_ai_v2 "Top")
+* [References](#references "References")
+* [Installing SSCMA Library](#installing-sscma-library "Installing SSCMA Library")
 
 ## References
 These are to save pointers to documentation.
