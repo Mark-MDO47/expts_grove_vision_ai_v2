@@ -17,6 +17,8 @@ The Vision-AI V2 module itself. Not sure why these have different prices.
 Documentation for using Vision-AI V2
 - https://wiki.seeedstudio.com/grove_vision_ai_v2/
 - https://wiki.seeedstudio.com/sensecraft-ai/tutorials/sensecraft-ai-pretrained-models-for-grove-vision-ai-v2/#tech-support--product-discussion
+- https://www.seeedstudio.com/blog/2025/01/16/introducing-sensecraft-ai-beginner-friendly-web-based-no-code-platform-for-ai-applications/#:~:text=We've%20gone%20beyond%20just,ensuring%20a%20beginner%2Dfriendly%20experience.
+  - start this about 17:00 to see demo including GPIO output
 - https://sensecraft.seeed.cc/ai/view-model/60782-person-detection-swift-yolo?tab=public
 - https://github.com/HimaxWiseEyePlus/Seeed_Grove_Vision_AI_Module_V2/tree/main
 - https://wiki.seeedstudio.com/No-code-Edge-AI-Tool/
