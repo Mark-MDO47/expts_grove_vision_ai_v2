@@ -32,8 +32,6 @@ Future plans may include a display to show the image, maybe using the ESP32-2432
 
 ## References
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
-These are to save pointers to documentation.
-
 Documentation for using Vision-AI V2
 - https://wiki.seeedstudio.com/grove_vision_ai_v2/
 - https://wiki.seeedstudio.com/sensecraft-ai/tutorials/sensecraft-ai-pretrained-models-for-grove-vision-ai-v2/#tech-support--product-discussion
