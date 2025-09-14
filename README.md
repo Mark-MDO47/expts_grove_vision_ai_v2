@@ -7,6 +7,7 @@ Experiments using Grove Vision AI version 2 and SEEED Sensecraft
 * [References](#references "References")
   * [Reset or Update Flash Memory](#reset-or-update-flash-memory "Reset or Update Flash Memory")
   * [Installing SSCMA Library](#installing-sscma-library "Installing SSCMA Library")
+  * [Usage of SSCMA Library](#usage-of-sscma-library "Usage of SSCMA Library")
   * [AI Models](#ai-models "AI Models")
 * [Face Following](#face-following "Face Following")
 
