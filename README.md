@@ -6,13 +6,16 @@ Experiments using Grove Vision AI version 2 and SEEED Sensecraft
 * [References](#references "References")
 * [Installing SSCMA Library](#installing-sscma-library "Installing SSCMA Library")
 
+## Module Ordering
+[Top](#expts_grove_vision_ai_v2 "Top")<br>
+The Vision-AI V2 module can be ordered here or at several other sources. Not sure why the following two links have different prices.
+- https://www.seeedstudio.com/Grove-Sensors-Grove-Vision-Al-Camera-2141.html
+- https://www.seeedstudio.com/Grove-Vision-AI-Module-V2-p-5851.html
+
+
 ## References
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
 These are to save pointers to documentation.
-
-The Vision-AI V2 module itself. Not sure why these have different prices.
-- https://www.seeedstudio.com/Grove-Sensors-Grove-Vision-Al-Camera-2141.html
-- https://www.seeedstudio.com/Grove-Vision-AI-Module-V2-p-5851.html
 
 Documentation for using Vision-AI V2
 - https://wiki.seeedstudio.com/grove_vision_ai_v2/
@@ -27,8 +30,14 @@ Documentation for using Vision-AI V2
 
 ## Installing SSCMA Library
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
+Seeed SenseCraft Model Assistant (SSCMA) is described in https://wiki.seeedstudio.com/ModelAssistant_Introduce_Overview/
+
+I will use this library to communicate with the Grove Vision AI V2 - 
+
 https://github.com/Seeed-Studio/Seeed_Arduino_SSCMA says to download a zip file and add the library to your Arduino IDE by selecting **Sketch > Include Library > Add .ZIP Library**
-- This seems out of date. I cannot find a *.zip file using the pointer.
-- Also the SSCMA library is now available by searching in the library manager
+- They don't explicitly say it but they expect you to click on the green **Code** button and choose **Download ZIP**
+- Also the SSCMA library is now available by searching in the library manager:
   - Go to **Tools > Manage Libraries.**
   - Search for and install **Seeed_Arduino_SSCMA**
+ 
+Look in https://github.com/Seeed-Studio/Seeed_Arduino_SSCMA/blob/main/src/Seeed_Arduino_SSCMA.h to see available options in class SSCMA. can use I2C (TwoWire), SPI, or UART communication. UART baud rate is 921,600. **AT**-style commands start near **CMD_AT_ID**; **SSCMA** methods start after **public:**.
