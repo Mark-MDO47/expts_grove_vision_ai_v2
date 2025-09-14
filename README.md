@@ -17,6 +17,18 @@ The Vision-AI V2 module can be ordered here or at several other sources. Not sur
 - https://www.seeedstudio.com/Grove-Sensors-Grove-Vision-Al-Camera-2141.html
 - https://www.seeedstudio.com/Grove-Vision-AI-Module-V2-p-5851.html
 
+I plan to connect the Vision-AI V2 to a XIAO ESP32-C3 because it is small, capable, and I have some in my parts bin.
+- https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C3-Pre-Soldered-p-6331.html
+- https://files.seeedstudio.com/wiki/Seeed-Studio-XIAO-ESP32/esp32-c3_datasheet.pdf
+- https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/XIAO-ESP32C3-pinout_sheet.xlsx
+
+Having an ESP32 with WiFi involved will allow me to use my Universal Remote - https://github.com/Mark-MDO47/UniRemote
+
+Future plans may include a display to show the image, maybe using the ESP32-2432S028R (Cheap Yellow Display or CYD) based on ESP32-D0WDQ6 controller instead of the XIAO ESP32-C3
+- https://www.aliexpress.us/item/3256805697430313.html
+- Would need to transfer image
+  - maybe via I2C
+  - maybe once again hijack the micro-SSD to use its SPI; this time from both sides
 
 ## References
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
