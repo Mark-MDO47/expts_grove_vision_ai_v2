@@ -30,9 +30,8 @@ Documentation for using Vision-AI V2
 
 ## Installing SSCMA Library
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
-Seeed SenseCraft Model Assistant (SSCMA) is described in https://wiki.seeedstudio.com/ModelAssistant_Introduce_Overview/
-
-I will use this library to communicate with the Grove Vision AI V2 - 
+Seeed SenseCraft Model Assistant (SSCMA) is described in https://wiki.seeedstudio.com/ModelAssistant_Introduce_Overview/<br>
+I will use this library to communicate with the Grove Vision AI V2. 
 
 https://github.com/Seeed-Studio/Seeed_Arduino_SSCMA says to download a zip file and add the library to your Arduino IDE by selecting **Sketch > Include Library > Add .ZIP Library**
 - They don't explicitly say it but they expect you to click on the green **Code** button and choose **Download ZIP**
