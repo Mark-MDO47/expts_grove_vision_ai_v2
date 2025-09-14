@@ -30,7 +30,11 @@ Documentation for using Vision-AI V2
 - https://github.com/HimaxWiseEyePlus/Seeed_Grove_Vision_AI_Module_V2/tree/main
 - https://wiki.seeedstudio.com/No-code-Edge-AI-Tool/
 
-## Installing SSCMA Library
+### Reset or Update Flash Memory
+[Top](#expts_grove_vision_ai_v2 "Top")<br>
+https://wiki.seeedstudio.com/grove_vision_ai_v2/ search for **Boot / Reset / Flashed Driver** or **Bootloader Recovery Tool Manual**
+
+### Installing SSCMA Library
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
 Seeed SenseCraft Model Assistant (SSCMA) is described in https://wiki.seeedstudio.com/ModelAssistant_Introduce_Overview/<br>
 I will use this library to communicate with the Grove Vision AI V2. 
@@ -48,7 +52,7 @@ Look in https://github.com/Seeed-Studio/Seeed_Arduino_SSCMA/blob/main/src/Seeed_
   - Has initialization routines for I2C (TwoWire), SPI, or UART communication. UART baud rate is 921,600.
 - **AT**-style commands start near **CMD_AT_ID**
 
-## AI Models
+### AI Models
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
 There are two supported ways to get a model into the Vision-AI V2 module
 - SenseCraft - https://wiki.seeedstudio.com/sensecraft-ai/overview/
@@ -56,3 +60,9 @@ There are two supported ways to get a model into the Vision-AI V2 module
   - https://studio.edgeimpulse.com/signup
 
 SenseCraft has some SSCMA models available here (via json files) - https://github.com/Seeed-Studio/sscma-model-zoo
+
+## Face Following
+[Top](#expts_grove_vision_ai_v2 "Top")<br>
+My first usage will be to add face following to my Skull Project https://github.com/Mark-MDO47/Skull-Project <br>
+There is a demo project that does face following with a fan:
+- https://wiki.seeedstudio.com/grove_vision_ai_v2_demo/ search for **Project I: Create a Face-Tracking Fan**
