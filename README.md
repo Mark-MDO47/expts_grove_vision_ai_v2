@@ -35,8 +35,22 @@ I will use this library to communicate with the Grove Vision AI V2.
 
 https://github.com/Seeed-Studio/Seeed_Arduino_SSCMA says to download a zip file and add the library to your Arduino IDE by selecting **Sketch > Include Library > Add .ZIP Library**
 - They don't explicitly say it but they expect you to click on the green **Code** button and choose **Download ZIP**
-- Also the SSCMA library is now available by searching in the library manager:
+- Then you point the Arduino IDE to that ZIP file.
+
+The SSCMA library is alternatively now available by searching in the Arduino IDE library manager:
   - Go to **Tools > Manage Libraries.**
   - Search for and install **Seeed_Arduino_SSCMA**
  
-Look in https://github.com/Seeed-Studio/Seeed_Arduino_SSCMA/blob/main/src/Seeed_Arduino_SSCMA.h to see available options in class SSCMA. can use I2C (TwoWire), SPI, or UART communication. UART baud rate is 921,600. **AT**-style commands start near **CMD_AT_ID**; **SSCMA** methods start after **public:**.
+Look in https://github.com/Seeed-Studio/Seeed_Arduino_SSCMA/blob/main/src/Seeed_Arduino_SSCMA.h to see available options in class SSCMA.
+- **SSCMA** methods start after **public:**.
+  - Has initialization routines for I2C (TwoWire), SPI, or UART communication. UART baud rate is 921,600.
+- **AT**-style commands start near **CMD_AT_ID**
+
+## AI Models
+[Top](#expts_grove_vision_ai_v2 "Top")<br>
+There are two supported ways to get a model into the Vision-AI V2 module
+- SenseCraft - https://wiki.seeedstudio.com/sensecraft-ai/overview/
+- Edge Impulse - https://wiki.seeedstudio.com/edgeimpulse/
+  - https://studio.edgeimpulse.com/signup
+
+SenseCraft has some SSCMA models available here (via json files) - https://github.com/Seeed-Studio/sscma-model-zoo
