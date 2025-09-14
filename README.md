@@ -1,5 +1,5 @@
 # expts_grove_vision_ai_v2
-Experiments using Grove Vision AI version 2 and SEEED Sensecraft
+Experiments using Grove Vision-AI version 2 and SEEED Sensecraft
 
 **Table Of Contents**
 * [Top](#expts_grove_vision_ai_v2 "Top")
@@ -50,7 +50,7 @@ https://wiki.seeedstudio.com/grove_vision_ai_v2/ search for **Boot / Reset / Fla
 ### Installing SSCMA Library
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
 Seeed SenseCraft Model Assistant (SSCMA) is described in https://wiki.seeedstudio.com/ModelAssistant_Introduce_Overview/<br>
-I will use this library to communicate with the Grove Vision AI V2. 
+I will use this library to communicate with the Grove Vision-AI V2. 
 
 https://github.com/Seeed-Studio/Seeed_Arduino_SSCMA says to download a zip file and add the library to your Arduino IDE by selecting **Sketch > Include Library > Add .ZIP Library**
 - They don't explicitly say it but they expect you to click on the green **Code** button and choose **Download ZIP**
@@ -67,8 +67,8 @@ Look in https://github.com/Seeed-Studio/Seeed_Arduino_SSCMA/blob/main/src/Seeed_
 
 ### Usage of SSCMA Library
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
-When called without parameters, the SSCMA::begin() function typically uses a default I2C interface, assuming the hardware is configured for it. The library is designed to work with Seeed Studio's hardware, and the no-parameter version of begin() provides a convenient way to initialize the communication interface for devices that use a standard I2C connection, such as the Grove Vision AI V2.<br>
-For example, when using the Grove Vision AI V2, the begin() function with no arguments:
+When called without parameters, the SSCMA::begin() function typically uses a default I2C interface, assuming the hardware is configured for it. The library is designed to work with Seeed Studio's hardware, and the no-parameter version of begin() provides a convenient way to initialize the communication interface for devices that use a standard I2C connection, such as the Grove Vision-AI V2.<br>
+For example, when using the Grove Vision-AI V2, the begin() function with no arguments:
 - Initializes the I2C communication protocol using the default Wire object.
 - Uses the default I2C address (I2C_ADDRESS) to identify and communicate with the device.
 
@@ -82,7 +82,7 @@ There are several ways to get a model into the Vision-AI V2 module; below are so
   - https://studio.edgeimpulse.com/signup
 - HimaxWiseEyePlus - https://github.com/HimaxWiseEyePlus/Seeed_Grove_Vision_AI_Module_V2
   - There is a model zoo here - https://github.com/HimaxWiseEyePlus/Seeed_Grove_Vision_AI_Module_V2/tree/main/model_zoo
-  - There is a way to debug models on the Vision AI V1 - https://github.com/HimaxWiseEyePlus/Seeed_Grove_Vision_AI_Module_V2/tree/main/swd_debugging
+  - There is a way to debug models on the Vision-AI V1 - https://github.com/HimaxWiseEyePlus/Seeed_Grove_Vision_AI_Module_V2/tree/main/swd_debugging
 
 ## Face Following
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
