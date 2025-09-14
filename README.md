@@ -54,14 +54,24 @@ Look in https://github.com/Seeed-Studio/Seeed_Arduino_SSCMA/blob/main/src/Seeed_
   - Has initialization routines for I2C (TwoWire), SPI, or UART communication. UART baud rate is 921,600.
 - **AT**-style commands start near **CMD_AT_ID**
 
+### Usage of SSCMA Library
+[Top](#expts_grove_vision_ai_v2 "Top")<br>
+When called without parameters, the SSCMA::begin() function typically uses a default I2C interface, assuming the hardware is configured for it. The library is designed to work with Seeed Studio's hardware, and the no-parameter version of begin() provides a convenient way to initialize the communication interface for devices that use a standard I2C connection, such as the Grove Vision AI V2.<br>
+For example, when using the Grove Vision AI V2, the begin() function with no arguments:
+- Initializes the I2C communication protocol using the default Wire object.
+- Uses the default I2C address (I2C_ADDRESS) to identify and communicate with the device.
+
+
 ### AI Models
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
-There are two supported ways to get a model into the Vision-AI V2 module
+There are several ways to get a model into the Vision-AI V2 module; below are some of them I have found
 - SenseCraft - https://wiki.seeedstudio.com/sensecraft-ai/overview/
+  - SenseCraft has some SSCMA models available here (via json files) - https://github.com/Seeed-Studio/sscma-model-zoo
 - Edge Impulse - https://wiki.seeedstudio.com/edgeimpulse/
   - https://studio.edgeimpulse.com/signup
-
-SenseCraft has some SSCMA models available here (via json files) - https://github.com/Seeed-Studio/sscma-model-zoo
+- HimaxWiseEyePlus - https://github.com/HimaxWiseEyePlus/Seeed_Grove_Vision_AI_Module_V2
+  - There is a model zoo here - https://github.com/HimaxWiseEyePlus/Seeed_Grove_Vision_AI_Module_V2/tree/main/model_zoo
+  - There is a way to debug models on the Vision AI V1 - https://github.com/HimaxWiseEyePlus/Seeed_Grove_Vision_AI_Module_V2/tree/main/swd_debugging
 
 ## Face Following
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
