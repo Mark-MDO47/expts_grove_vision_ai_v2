@@ -99,6 +99,7 @@ SenseCraft - https://wiki.seeedstudio.com/sensecraft-ai/overview/
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
 Edge Impulse - https://wiki.seeedstudio.com/edgeimpulse/
 - https://studio.edgeimpulse.com/signup
+- https://docs.edgeimpulse.com/hardware/boards/seeed-grove-vision-ai-module-v2-wise-eye-2
 
 #### HimaxWiseEyePlus
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
