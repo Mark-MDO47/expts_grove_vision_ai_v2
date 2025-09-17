@@ -21,11 +21,12 @@ Experiments using Grove Vision-AI version 2 and SEEED Sensecraft
   * [References](#references "References")
 * [Experiment 01 - Face Following](#experiment-01-\--face-following "Experiment 01 - Face Following")
 
-## Module Ordering
+## Module Ordering and Pinouts
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
 The Vision-AI V2 module can be ordered here or at several other sources, either as just the module or as a Kit including camera and ESP32-C3.
 - https://www.seeedstudio.com/Grove-Vision-AI-Module-V2-p-5851.html
 - https://www.seeedstudio.com/Grove-Vision-AI-V2-Kit-p-5852.html
+- https://www.flux.ai/seeedstudio/grove-vision-ai-module-v2-schematics-alpha-v0p2
 
 I plan to connect the Vision-AI V2 to a XIAO ESP32-C3 because it is small, capable, and I have some in my parts bin.
 - https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C3-Pre-Soldered-p-6331.html
