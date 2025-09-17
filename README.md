@@ -23,9 +23,9 @@ Experiments using Grove Vision-AI version 2 and SEEED Sensecraft
 
 ## Module Ordering
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
-The Vision-AI V2 module can be ordered here or at several other sources. Not sure why the following two links have different prices.
-- https://www.seeedstudio.com/Grove-Sensors-Grove-Vision-Al-Camera-2141.html
+The Vision-AI V2 module can be ordered here or at several other sources, either as just the module or as a Kit including camera and ESP32-C3.
 - https://www.seeedstudio.com/Grove-Vision-AI-Module-V2-p-5851.html
+- https://www.seeedstudio.com/Grove-Vision-AI-V2-Kit-p-5852.html
 
 I plan to connect the Vision-AI V2 to a XIAO ESP32-C3 because it is small, capable, and I have some in my parts bin.
 - https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C3-Pre-Soldered-p-6331.html
@@ -33,6 +33,9 @@ I plan to connect the Vision-AI V2 to a XIAO ESP32-C3 because it is small, capab
 - https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/XIAO-ESP32C3-pinout_sheet.xlsx
 
 Having an ESP32 with WiFi available will allow me to use my Universal Remote - https://github.com/Mark-MDO47/UniRemote
+
+The OV5647 camera module is available separately with several different fisheye lense configurations; several are shown here.
+- https://www.amazon.com/dp/B0D3X1VJCC?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1
 
 Future plans may include a display to show the image, maybe using the ESP32-2432S028R (Cheap Yellow Display or CYD) based on ESP32-D0WDQ6 controller instead of the XIAO ESP32-C3
 - https://www.aliexpress.us/item/3256805697430313.html
