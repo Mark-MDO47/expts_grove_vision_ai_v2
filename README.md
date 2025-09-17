@@ -120,7 +120,7 @@ Here are some entries to the Ultralytics world:
 - https://hub.ultralytics.com/home - free-level account available
 - https://www.youtube.com/watch?v=hHyHmOtmEgs&list=PL1FZnkj4ad1PFJTjW4mWpHZhzgJinkNV0&index=46 - this person tracking seems ideally suited to what I have in mind
 
-## Any model export (e.g. Ultralytics) then through SenseCraft
+## Any model export - example Ultralytics - then through SenseCraft
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
 NOTE: Due to the size limitation, currently both XIAO ESP32S3 and Grove Vision AI V2 only support int8 format models.
 
