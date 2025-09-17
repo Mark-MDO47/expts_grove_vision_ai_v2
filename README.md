@@ -35,7 +35,7 @@ I plan to connect the Vision-AI V2 to a XIAO ESP32-C3 because it is small, capab
 Having an ESP32 with WiFi available will allow me to use my Universal Remote - https://github.com/Mark-MDO47/UniRemote
 
 The OV5647 camera module is also available separately with different fisheye lense configurations; several are shown here.
-- https://www.amazon.com/dp/B0D3X1VJCC?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1
+- https://www.amazon.com/dp/B0D3X1VJCC?th=1
 
 Future plans may include a display to show the image, maybe using the ESP32-2432S028R (Cheap Yellow Display or CYD) based on ESP32-D0WDQ6 controller instead of the XIAO ESP32-C3
 - https://www.aliexpress.us/item/3256805697430313.html
