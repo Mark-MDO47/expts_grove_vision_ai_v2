@@ -126,7 +126,7 @@ To deploy an Ultralytics model to a Seeed Grove Vision AI V2, you must convert t
 
 ### Export your Ultralytics model 
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
-First, export your custom-trained or standard Ultralytics model (e.g., YOLOv8) to the ONNX format. This is done from your Python training environment or notebook using the Ultralytics export function. [5] [6]
+First, export your custom-trained or standard Ultralytics model (e.g., YOLOv8) to the ONNX format. This is done from your Python training environment or notebook using the Ultralytics export function. [1] [6]
 ```
 from ultralytics import YOLO
 
@@ -141,7 +141,7 @@ Use the SenseCraft Model Assistant, a Google Colab-based tool provided by Seeed 
 1. Open the SenseCraft Model Assistant Colab notebook linked in the Seeed Studio Wiki. [10] [11] [12] [13] [14] [15] [16]
 1. Follow the notebook's instructions to upload your exported ONNX model. 
 1. The notebook will perform the necessary quantization and conversion steps, producing a file with the int8_vela.tflite extension. 
-1. Download the converted  model file to your computer. [1] [5]
+1. Download the converted  model file to your computer. [1]
 
 ### Use SenseCraft AI to deploy the model 
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
