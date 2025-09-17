@@ -176,7 +176,7 @@ Once the upload is complete, the SenseCraft web interface should automatically d
 - [8] https://docs.petoi.com/extensible-modules/advanced-development-and-application-of-ai-vision-modules/model-deployment
 - [9] https://wiki.seeedstudio.com/sensecraft-ai/tutorials/sensecraft-ai-pretrained-models-for-grove-vision-ai-v2/
 
-## Face Following
+## Experiment 01 - Face Following
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
 There is a demo project that does face following with a fan:
 - https://wiki.seeedstudio.com/grove_vision_ai_v2_demo/ search for **Project I: Create a Face-Tracking Fan**
