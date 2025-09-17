@@ -120,13 +120,13 @@ Here are some entries to the Ultralytics world:
 - https://hub.ultralytics.com/home - free-level account available
 - https://www.youtube.com/watch?v=hHyHmOtmEgs&list=PL1FZnkj4ad1PFJTjW4mWpHZhzgJinkNV0&index=46 - this person tracking seems ideally suited to what I have in mind
 
-### Any model export (e.g. Ultralytics) then through SenseCraft
+## Any model export (e.g. Ultralytics) then through SenseCraft
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
 NOTE: Due to the size limitation, currently both XIAO ESP32S3 and Grove Vision AI V2 only support int8 format models.
 
 To deploy an Ultralytics model to a Seeed Grove Vision AI V2, you must convert the model to the specific  format required by the device's Himax WiseEye2 processor. The deployment process is managed by Seeed Studio's SenseCraft AI platform, which handles the flashing of the converted model onto the hardware. [1, 2, 3, 4]
 
-#### Export your Ultralytics model 
+### Export your Ultralytics model 
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
 First, export your custom-trained or standard Ultralytics model (e.g., YOLOv8) to the ONNX format. This is done from your Python training environment or notebook using the Ultralytics export function. [5, 6]
 ```
@@ -138,7 +138,8 @@ model = YOLO('yolov8n.pt')  # or use your own custom trained model
 # Export the model to ONNX format
 model.export(format='onnx', opset=12) 
 ```
-#### Convert ONNX to int8_vela.tflite
+
+### Convert ONNX to int8_vela.tflite
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
 Use the SenseCraft Model Assistant, a Google Colab-based tool provided by Seeed Studio, to convert your ONNX model to the specific  format. 
 
@@ -147,7 +148,7 @@ Use the SenseCraft Model Assistant, a Google Colab-based tool provided by Seeed 
 1. The notebook will perform the necessary quantization and conversion steps, producing a file with the int8_vela.tflite extension. 
 1. Download the converted  model file to your computer. [1, 5]
 
-#### Use SenseCraft AI to deploy the model 
+### Use SenseCraft AI to deploy the model 
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
 With the converted model, you can now use the SenseCraft AI platform to flash it to your device. 
 
@@ -159,11 +160,11 @@ With the converted model, you can now use the SenseCraft AI platform to flash it
 1. You will be prompted to provide the model name, your  model file, and the list of labels used for your dataset. 
 1. Click Send Model to begin the upload process. The flashing can take several minutes. [3, 7, 8, 9]  
 
-#### Test and view results 
+### Test and view results 
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
 Once the upload is complete, the SenseCraft web interface should automatically display the camera's live feed with your model's inference results overlaid on the video. [9]  
 
-#### References
+### References
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
 - [1] https://wiki.seeedstudio.com/grove_vision_ai_v2_sscma/
 - [2] https://docs.edgeimpulse.com/docs/edge-ai-hardware/mcu-+-ai-accelerators/himax-seeed-grove-vision-ai-module-v2-wise-eye-2
