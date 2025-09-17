@@ -9,6 +9,18 @@ Experiments using Grove Vision-AI version 2 and SEEED Sensecraft
   * [Installing SSCMA Library](#installing-sscma-library "Installing SSCMA Library")
   * [Usage of SSCMA Library](#usage-of-sscma-library "Usage of SSCMA Library")
   * [AI Models](#ai-models "AI Models")
+    * [SenseCraft](#sensecraft "SenseCraft")
+    * [Edge Impulse](#edge-impulse "Edge Impulse")
+    * [HimaxWiseEyePlus](#himaxwiseeyeplus "HimaxWiseEyePlus")
+  * [Ultralytics](#ultralytics "Ultralytics")
+  * [Any model export (e.g. Ultralytics) then through SenseCraft](#any-model-export-(eg-ultralytics)-then-through-sensecraft "Any model export (e.g. Ultralytics) then through SenseCraft")
+    * [Export your Ultralytics model](#export-your-ultralytics-model "Export your Ultralytics model")
+* [Load a trained model](#load-a-trained-model "Load a trained model")
+* [Export the model to ONNX format](#export-the-model-to-onnx-format "Export the model to ONNX format")
+    * [Convert ONNX to int8_vela.tflite](#convert-onnx-to-int8_velatflite "Convert ONNX to int8_vela.tflite")
+    * [Use SenseCraft AI to deploy the model](#use-sensecraft-ai-to-deploy-the-model "Use SenseCraft AI to deploy the model")
+    * [Test and view results](#test-and-view-results "Test and view results")
+    * [References](#references "References")
 * [Face Following](#face-following "Face Following")
 
 ## Module Ordering
