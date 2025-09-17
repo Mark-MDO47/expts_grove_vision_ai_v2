@@ -132,11 +132,8 @@ First, export your custom-trained or standard Ultralytics model (e.g., YOLOv8) t
 ```
 from ultralytics import YOLO
 
-# Load a trained model
-model = YOLO('yolov8n.pt')  # or use your own custom trained model
-
-# Export the model to ONNX format
-model.export(format='onnx', opset=12) 
+model = YOLO('yolov8n.pt')  # Load a trained model or use your own custom trained model
+model.export(format='onnx', opset=12) # Export the model to ONNX format
 ```
 
 ### Convert ONNX to int8_vela.tflite
