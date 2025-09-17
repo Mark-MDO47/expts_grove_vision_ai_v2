@@ -12,7 +12,7 @@ Experiments using Grove Vision-AI version 2 and SEEED Sensecraft
     * [SenseCraft](#sensecraft "SenseCraft")
     * [Edge Impulse](#edge-impulse "Edge Impulse")
     * [HimaxWiseEyePlus](#himaxwiseeyeplus "HimaxWiseEyePlus")
-  * [Ultralytics](#ultralytics "Ultralytics")
+    * [Ultralytics](#ultralytics "Ultralytics")
 * [Any model export - example Ultralytics - then through SenseCraft](#any-model-export-\--example-ultralytics-\--then-through-sensecraft "Any model export - example Ultralytics - then through SenseCraft")
   * [Export your Ultralytics model](#export-your-ultralytics-model "Export your Ultralytics model")
 * [Load a trained model](#load-a-trained-model "Load a trained model")
@@ -21,7 +21,7 @@ Experiments using Grove Vision-AI version 2 and SEEED Sensecraft
   * [Use SenseCraft AI to deploy the model](#use-sensecraft-ai-to-deploy-the-model "Use SenseCraft AI to deploy the model")
   * [Test and view results](#test-and-view-results "Test and view results")
   * [References](#references "References")
-* [Face Following](#face-following "Face Following")
+* [Experiment 01 - Face Following](#experiment-01-\--face-following "Experiment 01 - Face Following")
 
 ## Module Ordering
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
