@@ -3,7 +3,7 @@ Experiments using Grove Vision-AI version 2 and SEEED Sensecraft
 
 **Table Of Contents**
 * [Top](#expts_grove_vision_ai_v2 "Top")
-* [Module Ordering](#module-ordering "Module Ordering")
+* [Module Ordering and Pinouts](#module-ordering-and-pinouts "Module Ordering and Pinouts")
 * [References](#references "References")
   * [Reset or Update Flash Memory](#reset-or-update-flash-memory "Reset or Update Flash Memory")
   * [Installing SSCMA Library](#installing-sscma-library "Installing SSCMA Library")
