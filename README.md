@@ -138,7 +138,7 @@ model.export(format='onnx', opset=12) # Export the model to ONNX format
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
 Use the SenseCraft Model Assistant, a Google Colab-based tool provided by Seeed Studio, to convert your ONNX model to the specific  format. 
 
-1. Open the SenseCraft Model Assistant Colab notebook linked in the Seeed Studio Wiki. 
+1. Open the SenseCraft Model Assistant Colab notebook linked in the Seeed Studio Wiki. [10, 11, 12, 13, 14, 15, 16]
 1. Follow the notebook's instructions to upload your exported ONNX model. 
 1. The notebook will perform the necessary quantization and conversion steps, producing a file with the int8_vela.tflite extension. 
 1. Download the converted  model file to your computer. [1, 5]
@@ -170,6 +170,13 @@ Once the upload is complete, the SenseCraft web interface should automatically d
 - [7] https://wiki.seeedstudio.com/Vision_AI_with_Customizable_Models/
 - [8] https://docs.petoi.com/extensible-modules/advanced-development-and-application-of-ai-vision-modules/model-deployment
 - [9] https://wiki.seeedstudio.com/sensecraft-ai/tutorials/sensecraft-ai-pretrained-models-for-grove-vision-ai-v2/
+- [10] https://wiki.seeedstudio.com/tinyml_topic/
+- [11] https://wiki.seeedstudio.com/tinyml_topic/#support-platforms
+- [12] https://wiki.seeedstudio.com/ModelAssistant_Introduce_Overview/
+- [13] https://github.com/Seeed-Studio/ModelAssistant
+- [14] https://wiki.seeedstudio.com/ModelAssistant_Introduce_Quick_Start/
+- [15] https://wiki.seeedstudio.com/ModelAssistant_Introduce_Installation/
+- [16] https://wiki.seeedstudio.com/ModelAssistant_Tutorials_Export_Overview/
 
 ## Experiment 01 - Face Following
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
