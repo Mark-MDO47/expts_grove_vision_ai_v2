@@ -105,7 +105,7 @@ HimaxWiseEyePlus - https://github.com/HimaxWiseEyePlus/Seeed_Grove_Vision_AI_Mod
 - There is a model zoo here - https://github.com/HimaxWiseEyePlus/Seeed_Grove_Vision_AI_Module_V2/tree/main/model_zoo
 - There is a way to debug models on the Vision-AI V1 - https://github.com/HimaxWiseEyePlus/Seeed_Grove_Vision_AI_Module_V2/tree/main/swd_debugging
 
-### Ultralytics
+#### Ultralytics
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
 Ultralytics seems to concentrate on vision models.
 - Seems to allow moving trained models to different formats for implementation on inexpensive hardware.
