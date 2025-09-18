@@ -196,6 +196,10 @@ Once the upload is complete, the SenseCraft web interface should automatically d
 
 ## Experiment 01 - Face Following
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
+Follow Experiment 01 in detail here:
+- https://github.com/Mark-MDO47/expts_grove_vision_ai_v2/blob/master/expt_01_FaceFollowing/README.md
+
+### Experiment 01 Introduction
 There is a demo project that does face following with a fan:
 - https://wiki.seeedstudio.com/grove_vision_ai_v2_demo/ search for **Project I: Create a Face-Tracking Fan**
 
