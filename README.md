@@ -14,7 +14,7 @@ Experiments using Grove Vision-AI version 2 and SEEED Sensecraft
     * [HimaxWiseEyePlus](#himaxwiseeyeplus "HimaxWiseEyePlus")
     * [Ultralytics](#ultralytics "Ultralytics")
 * [Any Model Export - example Ultralytics - then through SenseCraft](#any-model-export-\--example-ultralytics-\--then-through-sensecraft "Any Model Export - example Ultralytics - then through SenseCraft")
-  * [Export your Ultralytics model](#export-your-ultralytics-model "Export your Ultralytics model")
+  * [Export an Ultralytics Model](#export-an-ultralytics-model "Export an Ultralytics Model")
   * [Convert ONNX to int8_vela.tflite](#convert-onnx-to-int8_velatflite "Convert ONNX to int8_vela.tflite")
   * [Use SenseCraft AI to deploy the model](#use-sensecraft-ai-to-deploy-the-model "Use SenseCraft AI to deploy the model")
   * [Test and view results](#test-and-view-results "Test and view results")
