@@ -20,6 +20,7 @@ Experiments using Grove Vision-AI version 2 and SEEED Sensecraft
   * [Test and view results](#test-and-view-results "Test and view results")
   * [References](#references "References")
 * [Experiment 01 - Face Following](#experiment-01-\--face-following "Experiment 01 - Face Following")
+  * [Experiment 01 Introduction](#experiment-01-introduction "Experiment 01 Introduction")
 
 ## Module Ordering and Pinouts
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
