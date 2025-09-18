@@ -127,11 +127,11 @@ Here are some entries to the Ultralytics world:
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
 NOTE: Due to the size limitation, currently both XIAO ESP32S3 and Grove Vision AI V2 only support int8 format models.
 
-To deploy an Ultralytics model to a Seeed Grove Vision AI V2, you must convert the model to the specific  format required by the device's Himax WiseEye2 processor. The deployment process is managed by Seeed Studio's SenseCraft AI platform, which handles the flashing of the converted model onto the hardware. [1] [2] [4]
+To deploy an Ultralytics model to a Seeed Grove Vision AI V2, you must convert the model to the specific  format required by the device's Himax WiseEye2 processor. The deployment process is managed by Seeed Studio's SenseCraft AI platform, which handles the flashing of the converted model onto the hardware. [1] [2] [3]
 
 ### Export your Ultralytics model 
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
-First, export your custom-trained or standard Ultralytics model (e.g., YOLOv8) to the ONNX format. This is done from your Python training environment or notebook using the Ultralytics export function. [1] [6]
+First, export your custom-trained or standard Ultralytics model (e.g., YOLOv8) to the ONNX format. This is done from your Python training environment or notebook using the Ultralytics export function. [1] [4]
 ```
 from ultralytics import YOLO
 
@@ -143,7 +143,7 @@ model.export(format='onnx', opset=12) # Export the model to ONNX format
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
 Use the SenseCraft Model Assistant, a Google Colab-based tool provided by Seeed Studio, to convert your ONNX model to the specific  format. 
 
-1. Open the SenseCraft Model Assistant Colab notebook linked in the Seeed Studio Wiki. [10] [11] [12] [13] [14] [15] [16]
+1. Open the SenseCraft Model Assistant Colab notebook linked in the Seeed Studio Wiki. [8] [9] [10] [11] [12] [13] [14]
 1. Follow the notebook's instructions to upload your exported ONNX model. 
 1. The notebook will perform the necessary quantization and conversion steps, producing a file with the int8_vela.tflite extension. 
 1. Download the converted  model file to your computer. [1]
@@ -158,30 +158,28 @@ With the converted model, you can now use the SenseCraft AI platform to flash it
 1. Click the Connect button and select the serial port for your device from the pop-up window. 
 1. After connecting, select the option to Upload Custom AI Model. 
 1. You will be prompted to provide the model name, your  model file, and the list of labels used for your dataset. 
-1. Click Send Model to begin the upload process. The flashing can take several minutes. [3] [7] [8] [9]  
+1. Click Send Model to begin the upload process. The flashing can take several minutes. [1] [5] [6] [7]  
 
 ### Test and view results 
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
-Once the upload is complete, the SenseCraft web interface should automatically display the camera's live feed with your model's inference results overlaid on the video. [9]  
+Once the upload is complete, the SenseCraft web interface should automatically display the camera's live feed with your model's inference results overlaid on the video. [7]  
 
 ### References
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
 - [1] https://wiki.seeedstudio.com/grove_vision_ai_v2_sscma/
 - [2] https://docs.edgeimpulse.com/docs/edge-ai-hardware/mcu-+-ai-accelerators/himax-seeed-grove-vision-ai-module-v2-wise-eye-2
-- [3] https://wiki.seeedstudio.com/grove_vision_ai_v2_sscma/
-- [4] https://www.seeedstudio.com/blog/2020/11/02/the-things-indoor-gateway-gets-started-with-sensecap-sensor/
-- [5] https://wiki.seeedstudio.com/grove_vision_ai_v2_sscma/
-- [6] https://github.com/ultralytics/ultralytics/issues/6676
-- [7] https://wiki.seeedstudio.com/Vision_AI_with_Customizable_Models/
-- [8] https://docs.petoi.com/extensible-modules/advanced-development-and-application-of-ai-vision-modules/model-deployment
-- [9] https://wiki.seeedstudio.com/sensecraft-ai/tutorials/sensecraft-ai-pretrained-models-for-grove-vision-ai-v2/
-- [10] https://wiki.seeedstudio.com/tinyml_topic/
-- [11] https://wiki.seeedstudio.com/tinyml_topic/#support-platforms
-- [12] https://wiki.seeedstudio.com/ModelAssistant_Introduce_Overview/
-- [13] https://github.com/Seeed-Studio/ModelAssistant
-- [14] https://wiki.seeedstudio.com/ModelAssistant_Introduce_Quick_Start/
-- [15] https://wiki.seeedstudio.com/ModelAssistant_Introduce_Installation/
-- [16] https://wiki.seeedstudio.com/ModelAssistant_Tutorials_Export_Overview/
+- [3] https://www.seeedstudio.com/blog/2020/11/02/the-things-indoor-gateway-gets-started-with-sensecap-sensor/
+- [4] https://github.com/ultralytics/ultralytics/issues/6676
+- [5] https://wiki.seeedstudio.com/Vision_AI_with_Customizable_Models/
+- [6] https://docs.petoi.com/extensible-modules/advanced-development-and-application-of-ai-vision-modules/model-deployment
+- [7] https://wiki.seeedstudio.com/sensecraft-ai/tutorials/sensecraft-ai-pretrained-models-for-grove-vision-ai-v2/
+- [8] https://wiki.seeedstudio.com/tinyml_topic/
+- [9] https://wiki.seeedstudio.com/tinyml_topic/#support-platforms
+- [10] https://wiki.seeedstudio.com/ModelAssistant_Introduce_Overview/
+- [11] https://github.com/Seeed-Studio/ModelAssistant
+- [12] https://wiki.seeedstudio.com/ModelAssistant_Introduce_Quick_Start/
+- [13] https://wiki.seeedstudio.com/ModelAssistant_Introduce_Installation/
+- [14] https://wiki.seeedstudio.com/ModelAssistant_Tutorials_Export_Overview/
 
 ## Experiment 01 - Face Following
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
