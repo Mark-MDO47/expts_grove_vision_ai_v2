@@ -64,7 +64,7 @@ https://wiki.seeedstudio.com/grove_vision_ai_v2/ search for **Boot / Reset / Fla
 ### Installing SSCMA Communication Library into Arduino IDE
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
 Be aware that there are two things named Seeed SenseCraft Model Assistant and referred to as SSCMA
-1. https://github.com/Seeed-Studio/Seeed_Arduino_SSCMA - a library for use in Arduino IDE to assist in communicating with AI models running on another hardware module
+1. https://github.com/Seeed-Studio/Seeed_Arduino_SSCMA - a library for use in Arduino IDE to assist in communicating with AI models running on a different hardware module
 1. https://wiki.seeedstudio.com/ModelAssistant_Introduce_Overview - Seeed SenseCraft (AI) Model Assistant - an open-source project focused on embedded AI including tools and a model zoo
 
 I will use the library to communicate with the Grove Vision-AI V2.
@@ -95,7 +95,7 @@ For example, when using the Grove Vision-AI V2, the begin() function with no arg
 There are several ways to get a model into the Vision-AI V2 module; below are some of them I have found.
 
 Be aware that there are two things named Seeed SenseCraft Model Assistant and referred to as SSCMA
-1. https://github.com/Seeed-Studio/Seeed_Arduino_SSCMA - a library for use in Arduino IDE to assist in communicating with AI models running on another hardware module
+1. https://github.com/Seeed-Studio/Seeed_Arduino_SSCMA - a library for use in Arduino IDE to assist in communicating with AI models running on a different hardware module
 1. https://wiki.seeedstudio.com/ModelAssistant_Introduce_Overview - Seeed SenseCraft (AI) Model Assistant - an open-source project focused on embedded AI including tools and a model zoo
 
 #### SenseCraft
@@ -133,7 +133,7 @@ Here are some entries to the Ultralytics world:
 ## Any Model Export - example Ultralytics - then through SenseCraft
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
 Be aware that there are two things named Seeed SenseCraft Model Assistant and referred to as SSCMA
-1. https://github.com/Seeed-Studio/Seeed_Arduino_SSCMA - a library for use in Arduino IDE to assist in communicating with AI models running on another hardware module
+1. https://github.com/Seeed-Studio/Seeed_Arduino_SSCMA - a library for use in Arduino IDE to assist in communicating with AI models running on a different hardware module
 1. https://wiki.seeedstudio.com/ModelAssistant_Introduce_Overview - Seeed SenseCraft (AI) Model Assistant - an open-source project focused on embedded AI including tools and a model zoo
 
 In the Model Export section we will use tools from the SSCMA open-source project.
