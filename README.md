@@ -28,7 +28,7 @@ The Vision-AI V2 module can be ordered here or at several other sources, either 
 - https://www.seeedstudio.com/Grove-Vision-AI-V2-Kit-p-5852.html
 - https://www.flux.ai/seeedstudio/grove-vision-ai-module-v2-schematics-alpha-v0p2
 
-I plan to connect the Vision-AI V2 to a XIAO ESP32-C3 because it is small, capable, and I have some in my parts bin.
+I plan to connect the Vision-AI V2 to a XIAO ESP32-C3 because it is small, capable, and I have some in my parts bin. Also, the XIAO ESP32-C3 is used in the Vision AI V2 Kit above.
 - https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C3-Pre-Soldered-p-6331.html
 - https://files.seeedstudio.com/wiki/Seeed-Studio-XIAO-ESP32/esp32-c3_datasheet.pdf
 - https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/XIAO-ESP32C3-pinout_sheet.xlsx
