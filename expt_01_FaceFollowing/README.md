@@ -2,6 +2,8 @@
 From https://github.com/Mark-MDO47/expts_grove_vision_ai_v2
 
 **Table Of Contents**
+* [Top](#experiment-01-\--face-following "Top")
+* [Introduction](#introduction "Introduction")
 
 ## Introduction
 There is a demo project that does face following with a fan:
