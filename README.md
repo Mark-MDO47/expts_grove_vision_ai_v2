@@ -61,10 +61,13 @@ Documentation for using Vision-AI V2
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
 https://wiki.seeedstudio.com/grove_vision_ai_v2/ search for **Boot / Reset / Flashed Driver** or **Bootloader Recovery Tool Manual**
 
-### Installing SSCMA Library
+### Installing SSCMA Communication Library into Arduino IDE
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
-Seeed SenseCraft Model Assistant (SSCMA) is described in https://wiki.seeedstudio.com/ModelAssistant_Introduce_Overview/<br>
-I will use this library to communicate with the Grove Vision-AI V2. 
+Be aware that there are two things named Seeed SenseCraft Model Assistant and referred to as SSCMA
+1. https://github.com/Seeed-Studio/Seeed_Arduino_SSCMA - a library for use in Arduino IDE to assist in communicating with AI models running on another hardware module
+1. https://wiki.seeedstudio.com/ModelAssistant_Introduce_Overview - Seeed SenseCraft (AI) Model Assistant - an open-source project focused on embedded AI including tools and a model zoo
+
+I will use the library to communicate with the Grove Vision-AI V2.
 
 https://github.com/Seeed-Studio/Seeed_Arduino_SSCMA says to download a zip file and add the library to your Arduino IDE by selecting **Sketch > Include Library > Add .ZIP Library**
 - They don't explicitly say it but they expect you to click on the green **Code** button and choose **Download ZIP**
@@ -89,7 +92,11 @@ For example, when using the Grove Vision-AI V2, the begin() function with no arg
 
 ### AI Models
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
-There are several ways to get a model into the Vision-AI V2 module; below are some of them I have found
+There are several ways to get a model into the Vision-AI V2 module; below are some of them I have found.
+
+Be aware that there are two things named Seeed SenseCraft Model Assistant and referred to as SSCMA
+1. https://github.com/Seeed-Studio/Seeed_Arduino_SSCMA - a library for use in Arduino IDE to assist in communicating with AI models running on another hardware module
+1. https://wiki.seeedstudio.com/ModelAssistant_Introduce_Overview - Seeed SenseCraft (AI) Model Assistant - an open-source project focused on embedded AI including tools and a model zoo
 
 #### SenseCraft
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
@@ -123,8 +130,14 @@ Here are some entries to the Ultralytics world:
 - https://hub.ultralytics.com/home - free-level account available
 - https://www.youtube.com/watch?v=hHyHmOtmEgs&list=PL1FZnkj4ad1PFJTjW4mWpHZhzgJinkNV0&index=46 - this person tracking seems ideally suited to what I have in mind
 
-## Any model export - example Ultralytics - then through SenseCraft
+## Any Model Export - example Ultralytics - then through SenseCraft
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
+Be aware that there are two things named Seeed SenseCraft Model Assistant and referred to as SSCMA
+1. https://github.com/Seeed-Studio/Seeed_Arduino_SSCMA - a library for use in Arduino IDE to assist in communicating with AI models running on another hardware module
+1. https://wiki.seeedstudio.com/ModelAssistant_Introduce_Overview - Seeed SenseCraft (AI) Model Assistant - an open-source project focused on embedded AI including tools and a model zoo
+
+In the Model Export section we will use tools from the SSCMA open-source project.
+
 NOTE: Due to the size limitation, currently both XIAO ESP32S3 and Grove Vision AI V2 only support int8 format models.
 
 To deploy an Ultralytics model to a Seeed Grove Vision AI V2, you must convert the model to the specific  format required by the device's Himax WiseEye2 processor. The deployment process is managed by Seeed Studio's SenseCraft AI platform, which handles the flashing of the converted model onto the hardware. [1] [2] [3]
@@ -166,13 +179,13 @@ Once the upload is complete, the SenseCraft web interface should automatically d
 
 ### References
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
-- [1] https://wiki.seeedstudio.com/grove_vision_ai_v2_sscma/
-- [2] https://docs.edgeimpulse.com/docs/edge-ai-hardware/mcu-+-ai-accelerators/himax-seeed-grove-vision-ai-module-v2-wise-eye-2
-- [3] https://www.seeedstudio.com/blog/2020/11/02/the-things-indoor-gateway-gets-started-with-sensecap-sensor/
-- [4] https://github.com/ultralytics/ultralytics/issues/6676
-- [5] https://wiki.seeedstudio.com/Vision_AI_with_Customizable_Models/
-- [6] https://docs.petoi.com/extensible-modules/advanced-development-and-application-of-ai-vision-modules/model-deployment
-- [7] https://wiki.seeedstudio.com/sensecraft-ai/tutorials/sensecraft-ai-pretrained-models-for-grove-vision-ai-v2/
+- [1] https://wiki.seeedstudio.com/grove_vision_ai_v2_sscma/
+- [2] https://docs.edgeimpulse.com/docs/edge-ai-hardware/mcu-+-ai-accelerators/himax-seeed-grove-vision-ai-module-v2-wise-eye-2
+- [3] https://www.seeedstudio.com/blog/2020/11/02/the-things-indoor-gateway-gets-started-with-sensecap-sensor/
+- [4] https://github.com/ultralytics/ultralytics/issues/6676
+- [5] https://wiki.seeedstudio.com/Vision_AI_with_Customizable_Models/
+- [6] https://docs.petoi.com/extensible-modules/advanced-development-and-application-of-ai-vision-modules/model-deployment
+- [7] https://wiki.seeedstudio.com/sensecraft-ai/tutorials/sensecraft-ai-pretrained-models-for-grove-vision-ai-v2/
 - [8] https://wiki.seeedstudio.com/tinyml_topic/
 - [9] https://wiki.seeedstudio.com/tinyml_topic/#support-platforms
 - [10] https://wiki.seeedstudio.com/ModelAssistant_Introduce_Overview/
