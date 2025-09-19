@@ -141,6 +141,11 @@ In the Model Export section we will use tools from the SSCMA open-source project
 
 NOTE: Due to the size limitation, currently both XIAO ESP32S3 and Grove Vision AI V2 only support int8 format models.
 
+NOTE: this Youtube shows an example project to detect different birds: https://www.youtube.com/watch?v=zdrtL1XDRn0&list=PLmOy82pCgLFnYoYTYNyQQvGa9bUU7hC5K
+- Shows how to export a trained model to SenseCraft
+- Shows how to download the inverence picture (third param = true on inference call)
+- Lots of good practical info from an actual Vision AI V2 project
+
 To deploy an Ultralytics model to a Seeed Grove Vision AI V2, we convert the model to the specific format required by the device's Himax WiseEye2 processor. The deployment process is managed by Seeed Studio's SenseCraft AI platform, which handles the flashing of the converted model onto the hardware. [1] [2] [3]
 
 ### Export an Ultralytics Model 
