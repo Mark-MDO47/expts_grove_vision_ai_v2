@@ -25,15 +25,17 @@ Experiments using Grove Vision-AI version 2 and SEEED Sensecraft
 ## Module Ordering and Pinouts
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
 The Vision-AI V2 module can be ordered here or at several other sources, either as just the module or as a Kit including camera and ESP32-C3.
-- https://www.seeedstudio.com/Grove-Vision-AI-Module-V2-p-5851.html
-- https://www.seeedstudio.com/Grove-Vision-AI-V2-Kit-p-5852.html
-- https://www.flux.ai/seeedstudio/grove-vision-ai-module-v2-schematics-alpha-v0p2
+- Vision AI V2 only - https://www.seeedstudio.com/Grove-Vision-AI-Module-V2-p-5851.html
+- Vision AI V2 kit - https://www.seeedstudio.com/Grove-Vision-AI-V2-Kit-p-5852.html
+- Himax chip datasheet - https://files.seeedstudio.com/wiki/grove-vision-ai-v2/HX6538_datasheet.pdf
+- schematic - https://files.seeedstudio.com/wiki/grove-vision-ai-v2/Grove_Vision_AI_Module_V2_Circuit_Diagram.pdf
+- layout - https://files.seeedstudio.com/wiki/grove-vision-ai-v2/Grove_Vision_AI_Module_V2_Layout.zip
 
 I plan to connect the Vision-AI V2 to a XIAO ESP32-C3 because it is small, capable, and I have some in my parts bin. Also, the XIAO ESP32-C3 is used in the Vision AI V2 Kit above.
-- https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C3-Pre-Soldered-p-6331.html
-- https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/
-- https://files.seeedstudio.com/wiki/Seeed-Studio-XIAO-ESP32/esp32-c3_datasheet.pdf
-- https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/XIAO-ESP32C3-pinout_sheet.xlsx
+- XIAO ESP32-C3 "soldered" - https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C3-Pre-Soldered-p-6331.html
+- getting started with XIAO C3 - https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/
+- Espressif C3 chip datasheet - https://files.seeedstudio.com/wiki/Seeed-Studio-XIAO-ESP32/esp32-c3_datasheet.pdf
+- XIAO C3 pinout - https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/XIAO-ESP32C3-pinout_sheet.xlsx
 
 Having an ESP32 with WiFi available will allow me to use my Universal Remote - https://github.com/Mark-MDO47/UniRemote
 
