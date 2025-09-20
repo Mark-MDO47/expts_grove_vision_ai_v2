@@ -34,13 +34,21 @@ The Vision-AI V2 module can be ordered here or at several other sources, either 
 I plan to connect the Vision-AI V2 to a XIAO ESP32-C3 because it is small, capable, and I have some in my parts bin. Also, the XIAO ESP32-C3 is used in the Vision AI V2 Kit above.
 - XIAO ESP32-C3 "soldered" - https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C3-Pre-Soldered-p-6331.html
 - getting started with XIAO C3 - https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/
+  - includes a list of "strapping pins" that we won't use: GPIOs 2, 8 and 9
+  - includes hinto on connecting a 3.7V lithium battery
 - Espressif C3 chip datasheet - https://files.seeedstudio.com/wiki/Seeed-Studio-XIAO-ESP32/esp32-c3_datasheet.pdf
 - XIAO C3 pinout - https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/XIAO-ESP32C3-pinout_sheet.xlsx
+- XIAO C3 schematic - https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/Seeeduino-XIAO-ESP32C3-SCH.pdf
 
 Having an ESP32 with WiFi available will allow me to use my Universal Remote - https://github.com/Mark-MDO47/UniRemote
 
 The OV5647 camera module is also available separately with different fisheye lense configurations; several are shown here.
-- https://www.amazon.com/dp/B0D3X1VJCC?th=1
+- OV5647-62 module - https://www.seeedstudio.com/OV5647-69-1-FOV-Camera-module-for-Raspberry-Pi-3B-4B-p-5484.html
+- OV5647-160 module - https://www.seeedstudio.com/OV5647-160-FOV-IR-Camera-module-for-Raspberry-Pi-3B-4B-p-5485.html
+- OV5647-160 (various) - https://www.amazon.com/dp/B0D3X1VJCC?th=1
+- OV5647-62 module datasheet - https://files.seeedstudio.com/wiki/OV5647_Series_Camera_Module/OV5647-62.pdf
+- OV5647-160 module datasheet - https://files.seeedstudio.com/wiki/OV5647_Series_Camera_Module/OV5647-160_FOV_IR_Camera_module.pdf
+- OV5647 chip spec - https://github.com/SeeedDocument/Raspberry_Pi_Camera_Module/raw/master/res/ov5647_full.pdf
 
 Future plans may include a display to show the image, maybe using the ESP32-2432S028R (Cheap Yellow Display or CYD) based on ESP32-D0WDQ6 controller instead of the XIAO ESP32-C3
 - https://www.aliexpress.us/item/3256805697430313.html
