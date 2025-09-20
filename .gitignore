@@ -58,4 +58,7 @@ dkms.conf
 # Mark stuff
 *.bak
 ~*
+#auto_saved_files#
+*.lck
 gitignore*
+
