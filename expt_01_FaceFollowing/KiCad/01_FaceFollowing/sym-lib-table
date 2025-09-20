@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "tmp")(type "KiCad")(uri "${KIPRJMOD}/tmp.kicad_sym")(options "")(descr ""))
+  (lib (name "mdoLibrary")(type "KiCad")(uri "C:/Users/mdo/Documents/GitHub_Mark-MDO47/expts_grove_vision_ai_v2/resources/kicad/mdoLibrary.kicad_sym")(options "")(descr ""))
+)
