@@ -4,6 +4,10 @@ Experiments using Grove Vision-AI version 2 and SEEED Sensecraft
 **Table Of Contents**
 * [Top](#expts_grove_vision_ai_v2 "Top")
 * [Module Ordering and Pinouts](#module-ordering-and-pinouts "Module Ordering and Pinouts")
+  * [Vision-AI V2](#vision\-ai-v2 "Vision-AI V2")
+  * [XIAO ESP32-C3](#xiao-esp32\-c3 "XIAO ESP32-C3")
+  * [OV5647 Camera Module](#ov5647-camera-module "OV5647 Camera Module")
+  * [Future Possibilities](#future-possibilities "Future Possibilities")
 * [References](#references "References")
   * [Reset or Update Flash Memory](#reset-or-update-flash-memory "Reset or Update Flash Memory")
   * [Installing SSCMA Communication Library into Arduino IDE](#installing-sscma-communication-library-into-arduino-ide "Installing SSCMA Communication Library into Arduino IDE")
