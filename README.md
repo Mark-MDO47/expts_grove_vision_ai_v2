@@ -164,6 +164,9 @@ In the Model Export section we will use tools from the SSCMA open-source project
 
 NOTE: Due to the size limitation, currently both XIAO ESP32S3 and Grove Vision AI V2 only support int8 format models.
 
+NOTE: here is the start of SEEED Studio docs on how to do this:
+- https://wiki.seeedstudio.com/grove_vision_ai_v2_sscma/
+
 NOTE: this Youtube shows an example project to detect different birds: https://www.youtube.com/watch?v=zdrtL1XDRn0&list=PLmOy82pCgLFnYoYTYNyQQvGa9bUU7hC5K
 - Shows how to export a trained model to SenseCraft
 - Shows how to download the inverence picture (third param = true on inference call)
