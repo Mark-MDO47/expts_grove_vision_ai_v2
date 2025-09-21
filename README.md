@@ -167,6 +167,9 @@ NOTE: Due to the size limitation, currently both XIAO ESP32S3 and Grove Vision A
 NOTE: here is the start of SEEED Studio docs on how to do this:
 - https://wiki.seeedstudio.com/grove_vision_ai_v2_sscma/
 
+NOTE: here is a SEEED Wiki document on how to do this
+- https://github.com/Seeed-Studio/wiki-documents/blob/docusaurus-version/docs/Sensor/Grove/Grove_Sensors/AI-powered/Train-Deploy-AI-Model-Grove-Vision-AI.md
+
 NOTE: here is a Hackster.io example of how to do this
 - https://www.hackster.io/mjrobot/computer-vision-at-the-edge-with-grove-vision-ai-module-v2-0003c7
 
