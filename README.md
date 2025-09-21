@@ -24,6 +24,9 @@ Experiments using Grove Vision-AI version 2 and SEEED Sensecraft
 
 ## Module Ordering and Pinouts
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
+
+### Vision-AI V2
+[Top](#expts_grove_vision_ai_v2 "Top")<br>
 The Vision-AI V2 module can be ordered here or at several other sources, either as just the module or as a Kit including camera and ESP32-C3.
 - Vision AI V2 only - https://www.seeedstudio.com/Grove-Vision-AI-Module-V2-p-5851.html
 - Vision AI V2 kit - https://www.seeedstudio.com/Grove-Vision-AI-V2-Kit-p-5852.html
@@ -31,6 +34,8 @@ The Vision-AI V2 module can be ordered here or at several other sources, either 
 - schematic - https://files.seeedstudio.com/wiki/grove-vision-ai-v2/Grove_Vision_AI_Module_V2_Circuit_Diagram.pdf
 - layout - https://files.seeedstudio.com/wiki/grove-vision-ai-v2/Grove_Vision_AI_Module_V2_Layout.zip
 
+### XIAO ESP32-C3
+[Top](#expts_grove_vision_ai_v2 "Top")<br>
 I plan to connect the Vision-AI V2 to a XIAO ESP32-C3 because it is small, capable, and I have some in my parts bin. Also, the XIAO ESP32-C3 is used in the Vision AI V2 Kit above.
 - XIAO ESP32-C3 "soldered" - https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C3-Pre-Soldered-p-6331.html
 - XIAO ESP32-C3 "tape & reel" - https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C3-Tape-Reel-p-6471.html
@@ -49,6 +54,8 @@ I plan to connect the Vision-AI V2 to a XIAO ESP32-C3 because it is small, capab
 
 Having an ESP32 with WiFi available will allow me to use my Universal Remote - https://github.com/Mark-MDO47/UniRemote
 
+### OV5647 Camera Module
+[Top](#expts_grove_vision_ai_v2 "Top")<br>
 The OV5647 camera module is also available separately with different fisheye lense configurations; several are shown here.
 - OV5647-62 module - https://www.seeedstudio.com/OV5647-69-1-FOV-Camera-module-for-Raspberry-Pi-3B-4B-p-5484.html
 - OV5647-160 module - https://www.seeedstudio.com/OV5647-160-FOV-IR-Camera-module-for-Raspberry-Pi-3B-4B-p-5485.html
@@ -59,6 +66,7 @@ The OV5647 camera module is also available separately with different fisheye len
 - NOTE: camera connection via cable - several images in SEEED documentation show cable orientation WRONG - connect as per the GIF
   - https://files.seeedstudio.com/wiki/grove-vision-ai-v2/9.gif
 
+### Future Possibilities
 Future plans may include a display to show the image, maybe using the ESP32-2432S028R (Cheap Yellow Display or CYD) based on ESP32-D0WDQ6 controller instead of the XIAO ESP32-C3
 - https://www.aliexpress.us/item/3256805697430313.html
 - Would need to transfer image
