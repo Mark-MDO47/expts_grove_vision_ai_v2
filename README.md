@@ -53,6 +53,7 @@ I plan to connect the Vision-AI V2 to a XIAO ESP32-C3 because it is small, capab
 - XIAO C3 pinout - https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/XIAO-ESP32C3-pinout_sheet.xlsx
 - XIAO C3 schematic - https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/Seeeduino-XIAO-ESP32C3-SCH.pdf
 - NOTE: camera connection via cable - several images in SEEED documentation show cable orientation WRONG - connect as per the GIF
+  - Blue strip visible when inserting in connector
   - https://files.seeedstudio.com/wiki/grove-vision-ai-v2/9.gif
 - EXCELLENT LIST of detailed documents for Vision AI-  https://forum.seeedstudio.com/t/a-collection-of-useful-links-for-those-developing-applications-for-grove-vision-ai-v2/280236
 
