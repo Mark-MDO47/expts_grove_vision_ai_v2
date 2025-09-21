@@ -43,6 +43,9 @@ I plan to connect the Vision-AI V2 to a XIAO ESP32-C3 because it is small, capab
 - Espressif C3 chip datasheet - https://files.seeedstudio.com/wiki/Seeed-Studio-XIAO-ESP32/esp32-c3_datasheet.pdf
 - XIAO C3 pinout - https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/XIAO-ESP32C3-pinout_sheet.xlsx
 - XIAO C3 schematic - https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/Seeeduino-XIAO-ESP32C3-SCH.pdf
+- NOTE: camera connection via cable - several images in SEEED documentation show cable orientation WRONG - connect as per the GIF
+  - https://files.seeedstudio.com/wiki/grove-vision-ai-v2/9.gif
+- EXCELLENT LIST of detailed documents for Vision AI-  https://forum.seeedstudio.com/t/a-collection-of-useful-links-for-those-developing-applications-for-grove-vision-ai-v2/280236
 
 Having an ESP32 with WiFi available will allow me to use my Universal Remote - https://github.com/Mark-MDO47/UniRemote
 
@@ -53,6 +56,8 @@ The OV5647 camera module is also available separately with different fisheye len
 - OV5647-62 module datasheet - https://files.seeedstudio.com/wiki/OV5647_Series_Camera_Module/OV5647-62.pdf
 - OV5647-160 module datasheet - https://files.seeedstudio.com/wiki/OV5647_Series_Camera_Module/OV5647-160_FOV_IR_Camera_module.pdf
 - OV5647 chip spec - https://github.com/SeeedDocument/Raspberry_Pi_Camera_Module/raw/master/res/ov5647_full.pdf
+- NOTE: camera connection via cable - several images in SEEED documentation show cable orientation WRONG - connect as per the GIF
+  - https://files.seeedstudio.com/wiki/grove-vision-ai-v2/9.gif
 
 Future plans may include a display to show the image, maybe using the ESP32-2432S028R (Cheap Yellow Display or CYD) based on ESP32-D0WDQ6 controller instead of the XIAO ESP32-C3
 - https://www.aliexpress.us/item/3256805697430313.html
@@ -185,7 +190,9 @@ Use the SenseCraft Model Assistant, a Google Colab-based tool provided by Seeed 
 1. The notebook will perform the necessary quantization and conversion steps, producing a file with the int8_vela.tflite extension. 
 1. Download the converted  model file to your computer. [1]
 
-NOTE: read this forum entry to get Python install correct: https://forum.seeedstudio.com/t/grove-ai-vision-install-tensorflow-for-yolov5-swift-error/292556
+NOTE: read these forum entries to get Python dependencies correct:
+- https://forum.seeedstudio.com/t/grove-ai-vision-install-tensorflow-for-yolov5-swift-error/292556
+- https://forum.seeedstudio.com/t/failed-to-setup-sscma-in-google-colab/280950/2
 
 ### Use SenseCraft AI to deploy the model 
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
