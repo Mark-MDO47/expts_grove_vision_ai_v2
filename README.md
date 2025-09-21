@@ -61,9 +61,10 @@ Having an ESP32 with WiFi available will allow me to use my Universal Remote - h
 
 ### OV5647 Camera Module
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
-The OV5647 camera module is also available separately with different fisheye lense configurations; several are shown here.
+The OV5647 camera module is also available separately with different fisheye lense configurations; several are shown here. I have the ones from Amazon; both -62 and -160/95deg work with Vision AI V2.
 - OV5647-62 module - https://www.seeedstudio.com/OV5647-69-1-FOV-Camera-module-for-Raspberry-Pi-3B-4B-p-5484.html
 - OV5647-160 module - https://www.seeedstudio.com/OV5647-160-FOV-IR-Camera-module-for-Raspberry-Pi-3B-4B-p-5485.html
+- OV5647-62 module - https://www.amazon.com/dp/B012V1HEP4?th=1
 - OV5647-160 (various) - https://www.amazon.com/dp/B0D3X1VJCC?th=1
 - OV5647-62 module datasheet - https://files.seeedstudio.com/wiki/OV5647_Series_Camera_Module/OV5647-62.pdf
 - OV5647-160 module datasheet - https://files.seeedstudio.com/wiki/OV5647_Series_Camera_Module/OV5647-160_FOV_IR_Camera_module.pdf
