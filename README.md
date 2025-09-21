@@ -57,7 +57,10 @@ The OV5647 camera module is also available separately with different fisheye len
 Future plans may include a display to show the image, maybe using the ESP32-2432S028R (Cheap Yellow Display or CYD) based on ESP32-D0WDQ6 controller instead of the XIAO ESP32-C3
 - https://www.aliexpress.us/item/3256805697430313.html
 - Would need to transfer image
-  - maybe via I2C
+  - maybe via I2C or UART
+    - https://wiki.seeedstudio.com/grove_vision_ai_v2_rs485/
+    - https://wiki.seeedstudio.com/grove_vision_ai_v2_at/
+    - https://wiki.seeedstudio.com/grove_vision_ai_v2_at/#base64tojpeg
   - maybe once again hijack the micro-SSD to use its SPI; this time from both sides
 
 ## References
@@ -181,6 +184,8 @@ Use the SenseCraft Model Assistant, a Google Colab-based tool provided by Seeed 
 1. Follow the notebook's instructions to upload the exported ONNX model. 
 1. The notebook will perform the necessary quantization and conversion steps, producing a file with the int8_vela.tflite extension. 
 1. Download the converted  model file to your computer. [1]
+
+NOTE: read this forum entry to get Python install correct: https://forum.seeedstudio.com/t/grove-ai-vision-install-tensorflow-for-yolov5-swift-error/292556
 
 ### Use SenseCraft AI to deploy the model 
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
