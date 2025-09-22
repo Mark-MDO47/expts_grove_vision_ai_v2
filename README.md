@@ -45,7 +45,7 @@ I plan to connect the Vision-AI V2 to a XIAO ESP32-C3 because it is small, capab
 - XIAO ESP32-C3 "tape & reel" - https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C3-Tape-Reel-p-6471.html
 - XIAO ESP32-C3 WiFi 2.4GHz antenna - https://www.seeedstudio.com/2-4GHz-FPC-Antenna-2-9dBi-for-XIAO-ESP32C3-p-6439.html
 - getting started with XIAO C3 - https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/
-  - includes a list of "strapping pins" that we won't use: GPIOs 2, 8 and 9
+  - includes a list of "strapping pins" that we won't use: GPIOs 2, 8 and 9 - same as **D0**, D8 and D9 (strange???)
   - includes hints on connecting a 3.7V lithium battery
 - Which GPIOs to use and notes on strapping pins - https://pcbartists.com/design/embedded/esp32-c3-gpio-notes-strapping-pins/
 - First Look - definitely worth a read - https://sigmdel.ca/michel/ha/xiao/xiao_esp32c3_intro_en.html
