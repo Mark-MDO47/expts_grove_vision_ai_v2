@@ -120,6 +120,7 @@ Look in https://github.com/Seeed-Studio/Seeed_Arduino_SSCMA/blob/main/src/Seeed_
   - Has initialization routines for I2C (TwoWire), SPI, or UART communication. UART baud rate is 921,600.
 - **AT**-style commands start near **CMD_AT_ID**
   - AT commands wiki - https://wiki.seeedstudio.com/grove_vision_ai_v2_at/
+  - AT protocol documentation - https://github.com/Seeed-Studio/SSCMA-Micro/blob/1.0.x/docs/protocol/at_protocol.md
 
 ### Usage of SSCMA Library
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
