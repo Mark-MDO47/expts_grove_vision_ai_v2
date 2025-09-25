@@ -99,19 +99,19 @@ Documentation for using Vision-AI V2
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
 https://wiki.seeedstudio.com/grove_vision_ai_v2/ search for **Boot / Reset / Flashed Driver** or **Bootloader Recovery Tool Manual**
 
-### Installing SSCMA Communication Library into Arduino IDE
+### Installing Seeed_Arduino_SSCMA Communication Library into Arduino IDE
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
 Be aware that there are two things named Seeed SenseCraft Model Assistant and referred to as SSCMA
-1. https://github.com/Seeed-Studio/Seeed_Arduino_SSCMA - a library for use in Arduino IDE to assist in communicating with AI models running on a different hardware module
+1. https://github.com/Seeed-Studio/Seeed_Arduino_SSCMA - Seeed_Arduino_SSCMA - a library for use in Arduino IDE to assist in communicating with AI models running on a different hardware module
 1. https://wiki.seeedstudio.com/ModelAssistant_Introduce_Overview - Seeed SenseCraft (AI) Model Assistant - an open-source project focused on embedded AI including tools and a model zoo
 
-I will use the library to communicate with the Grove Vision-AI V2.
+I will use the Seeed_Arduino_SSCMA library to communicate with the Grove Vision-AI V2.
 
 https://github.com/Seeed-Studio/Seeed_Arduino_SSCMA says to download a zip file and add the library to your Arduino IDE by selecting **Sketch > Include Library > Add .ZIP Library**
 - They don't explicitly say it but they expect you to click on the green **Code** button and choose **Download ZIP**
 - Then you point the Arduino IDE to that ZIP file.
 
-The SSCMA library is alternatively now available by searching in the Arduino IDE library manager:
+The Seeed_Arduino_SSCMA library is alternatively now available by searching in the Arduino IDE library manager:
   - Go to **Tools > Manage Libraries.**
   - Search for and install **Seeed_Arduino_SSCMA**
  
@@ -122,7 +122,7 @@ Look in https://github.com/Seeed-Studio/Seeed_Arduino_SSCMA/blob/main/src/Seeed_
   - AT commands wiki - https://wiki.seeedstudio.com/grove_vision_ai_v2_at/
   - AT protocol documentation - https://github.com/Seeed-Studio/SSCMA-Micro/blob/1.0.x/docs/protocol/at_protocol.md
 
-### Usage of SSCMA Library
+### Usage of Seeed_Arduino_SSCMA Library
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
 When called without parameters, the SSCMA::begin() function typically uses a default I2C interface, assuming the hardware is configured for it. The library is designed to work with Seeed Studio's hardware, and the no-parameter version of begin() provides a convenient way to initialize the communication interface for devices that use a standard I2C connection, such as the Grove Vision-AI V2.<br>
 For example, when using the Grove Vision-AI V2, the begin() function with no arguments:
