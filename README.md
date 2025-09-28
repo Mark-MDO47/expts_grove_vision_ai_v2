@@ -35,8 +35,8 @@ The Vision-AI V2 module can be ordered here or at several other sources, either 
 - Vision AI V2 only - https://www.seeedstudio.com/Grove-Vision-AI-Module-V2-p-5851.html
 - Vision AI V2 kit - https://www.seeedstudio.com/Grove-Vision-AI-V2-Kit-p-5852.html
 - Himax chip datasheet - https://files.seeedstudio.com/wiki/grove-vision-ai-v2/HX6538_datasheet.pdf
-- schematic - https://files.seeedstudio.com/wiki/grove-vision-ai-v2/Grove_Vision_AI_Module_V2_Circuit_Diagram.pdf
-- layout - https://files.seeedstudio.com/wiki/grove-vision-ai-v2/Grove_Vision_AI_Module_V2_Layout.zip
+- Vision AI V2 schematic - https://files.seeedstudio.com/wiki/grove-vision-ai-v2/Grove_Vision_AI_Module_V2_Circuit_Diagram.pdf
+- Vision AI V2 layout - https://files.seeedstudio.com/wiki/grove-vision-ai-v2/Grove_Vision_AI_Module_V2_Layout.zip
 - EXCELLENT LIST of detailed documents for Vision AI-  https://forum.seeedstudio.com/t/a-collection-of-useful-links-for-those-developing-applications-for-grove-vision-ai-v2/280236
 
 ### XIAO ESP32-C3
@@ -55,6 +55,31 @@ I plan to connect the Vision-AI V2 to a XIAO ESP32-C3 because it is small, capab
 - XIAO C3 schematic - https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/Seeeduino-XIAO-ESP32C3-SCH.pdf
 
 Having an ESP32 with WiFi available will allow me to use my Universal Remote - https://github.com/Mark-MDO47/UniRemote
+
+### XIAO Connector On Vision AI V2
+[Top](#expts_grove_vision_ai_v2 "Top")<br>
+In trying to decide which pins to route to directly to the XIAO header and which to use externally, I found this helpful. Info gathered from:
+- XIAO C3 pinout - https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/XIAO-ESP32C3-pinout_sheet.xlsx
+- getting started with XIAO C3 - https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/
+- Vision AI V2 schematic - https://files.seeedstudio.com/wiki/grove-vision-ai-v2/Grove_Vision_AI_Module_V2_Circuit_Diagram.pdf
+- Himax chip datasheet - https://files.seeedstudio.com/wiki/grove-vision-ai-v2/HX6538_datasheet.pdf
+
+| XIAO pin | XIAO usage | HX6538-A usage | HX Reset | HX pin |
+| --- | --- | --- | --- | --- |
+| D0/A0 #1 | Dig/Ana | GP I/O FS PL AON 3.3V-OK  | Rst-Inp PL |  PA0 #18 |
+| D1/A1 #2 | Dig/Ana | GP I/O FS PL 3.3V-OK | Rst-Inp PL | PB11 #46 |
+| D2/A2 #3 | Dig/Ana | GP I/O FS PL 3.3V-OK | Rst-Inp PL | PB8 #94 |
+| D3/A3 #4 | Dig/C3-NOT-Ana | RST-LO I FS PH AON 3.3V-OK | RESETN #17 |
+| D4/SDA #5 | Dig/IIC | GP/IIC/SDA I/O FS  | Rst-Inp PH | PA3 #24 |
+| D5/SCL #6 | Dig/IIC | GP/IIC/SDA I/O FS | Rst-Inp PH | PA2 #23 |
+| D6/TX #7 | Dig/UART | GP/UART-RX I/O FS PL 3.3V-OK | Rst-Inp PL | PB6 #92 |
+| D7/RX #8 | Dig/UART | GP/UART-TX I/O FS PL 3.3V-OK | Rst-Inp PL | PB7 #93 |
+| D8/SCK #9 | Dig/SPI | GP/SPI-SCLK I/O FS PL 3.3V-OK | Rst-Inp PL | PB4 #74 |
+| D9/MISO #10 | Dig/SPI | GP/SPI-IN-D1 I/O FS PL 3.3V-OK | Rst-Inp PL | PB3 # |
+| D10/MOSI #11 | Dig/SPI | GP/SPI-IN-D0 I/O FS PL 3.3V-OK | Rst-Inp PL | PB2 # |
+| 3V3 #12 | Pwr | N/A Pwr Imax=600mA | N/A | N/A |
+| GND #13 | Pwr | N/A Pwr | N/A | N/A |
+| VUSB #14 | Pwr | N/A Pwr input either Vision USB or XIAO USB | N/A | N/A |
 
 ### OV5647 Camera Module
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
