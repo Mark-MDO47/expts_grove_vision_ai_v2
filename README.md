@@ -71,8 +71,8 @@ In trying to decide which pins to route to directly to the XIAO header and which
 | D1/A1 #2 | Dig/Ana | GP I/O FS PL 3.3V-OK | Rst-Inp PL | PB11 #46 |
 | D2/A2 #3 | Dig/Ana | GP I/O FS PL 3.3V-OK | Rst-Inp PL | PB8 #94 |
 | D3/A3 #4 | Dig/C3-NOT-Ana | RST-LO I FS PH AON 3.3V-OK | RESETN #17 |
-| D4/SDA #5 | Dig/IIC | GP/IIC/SDA I/O FS  | Rst-Inp PH | PA3 #24 |
-| D5/SCL #6 | Dig/IIC | GP/IIC/SDA I/O FS | Rst-Inp PH | PA2 #23 |
+| D4/SDA #5 | Dig/IIC | GP/IIC-SDA I/O FS  | Rst-Inp PH | PA3 #24 |
+| D5/SCL #6 | Dig/IIC | GP/IIC-SCL I/O FS | Rst-Inp PH | PA2 #23 |
 | D6/TX #7 | Dig/UART | GP/UART-RX I/O FS PL 3.3V-OK | Rst-Inp PL | PB6 #92 |
 | D7/RX #8 | Dig/UART | GP/UART-TX I/O FS PL 3.3V-OK | Rst-Inp PL | PB7 #93 |
 | D8/SCK #9 | Dig/SPI | GP/SPI-SCLK I/O FS PL 3.3V-OK | Rst-Inp PL | PB4 #74 |
@@ -81,6 +81,14 @@ In trying to decide which pins to route to directly to the XIAO header and which
 | 3V3 #12 | Pwr | N/A Pwr Imax=600mA | N/A | N/A |
 | GND #13 | Pwr | N/A Pwr | N/A | N/A |
 | VUSB #14 | Pwr | N/A Pwr input either Vision USB or XIAO USB | N/A | N/A |
+
+Notes: 
+- Pin Types:
+  - A =Analog, I =Input, O =Output, P =Power, G =Ground , FS =Fail S afe
+- Reset States:
+  - PH =Pull High, PL =Pull Low
+- Pin Domains:
+  - SIF =1.8V only, PIF =1.8V or AON =1.8V or 3.3V (always on)
 
 ### OV5647 Camera Module
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
