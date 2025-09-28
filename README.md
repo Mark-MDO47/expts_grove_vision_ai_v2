@@ -310,6 +310,6 @@ Because the Skull Project eyes are pretty busy just displaying the eyes, I don't
 
 I just realized I was looking at the Analog-to-Digital capabilities (ADC for analog input) instead of the Digital-to-Analog capabilities. The XIAO ESP32-C3 only has D10 with DAC.
 
-I will start by using the ESP32 LEDC library for analog output. I may need to implement filtering on the analog outputs so the SAMD51 can do reliable sensing.
+I will start by using the ESP32 LEDC library for analog output; that way I can use the same code for both analog outputs. I may need to implement filtering on the analog outputs so the SAMD51 can do reliable sensing.
 
 I previously did LEDC analog outputs in my https://github.com/Mark-MDO47/DuelWithBanjos project. I didn't need any filtering with the LED outputs. We shall see...
