@@ -82,7 +82,7 @@ In the following table the **My Use** column:
 | V | D7/RX #8 | Dig/UART | GP/UART-TX I/O FS PL 3.3V-OK | On-Rst-Inp PL | PB7 #93 |
 | X | D8/SCK #9 | Dig/SPI | GP/SPI-SCLK I/O FS PL 3.3V-OK | On-Rst-Inp PL | PB4 #74 |
 | X | D9/MISO #10 | Dig/SPI | GP/SPI-IN-D1 I/O FS PL 3.3V-OK | On-Rst-Inp PL | PB3 #73 |
-| X | D10/MOSI #11 | Dig/SPI | GP/SPI-IN-D0 I/O FS PL 3.3V-OK | On-Rst-Inp PL | PB2 #72 |
+| X | D10/MOSI/DAC #11 | Dig/SPI/DAC | GP/SPI-IN-D0 I/O FS PL 3.3V-OK | On-Rst-Inp PL | PB2 #72 |
 | V | 3V3 #12 | Pwr | N/A Pwr Imax=600mA | N/A | N/A |
 | V/E/X | GND #13 | Pwr | N/A Pwr | N/A | N/A |
 | V | VUSB #14 | Pwr | N/A Pwr input either Vision USB or XIAO USB | N/A | N/A |
@@ -307,3 +307,9 @@ The Skull Project uses eyes made from Adafruit HalloWing M4 Express. These use t
 - http://ww1.microchip.com/downloads/en/DeviceDoc/60001507E.pdf
 
 Because the Skull Project eyes are pretty busy just displaying the eyes, I don't want to interrupt them at random times with an I2C or UART message. Thus I plan to output the position information on two ESP32-C3 Analog channels, and the SAMD51 in the eyes can sample the information at any convenient time that doesn't interrupt its processing.
+
+I just realized I was looking at the Analog-to-Digital capabilities (ADC for analog input) instead of the Digital-to-Analog capabilities. The XIAO ESP32-C3 only has D10 with DAC.
+
+I will start by using the ESP32 LEDC library for analog output. I may need to implement filtering on the analog outputs so the SAMD51 can do reliable sensing.
+
+I previously did LEDC analog outputs in my https://github.com/Mark-MDO47/DuelWithBanjos project. I didn't need any filtering with the LED outputs. We shall see...
