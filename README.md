@@ -84,7 +84,7 @@ In the following table the **My Use** column:
 | X | D9/MISO #10 | Dig/SPI | GP/SPI-IN-D1 I/O FS PL 3.3V-OK | On-Rst-Inp PL | PB3 #73 |
 | X | D10/MOSI #11 | Dig/SPI | GP/SPI-IN-D0 I/O FS PL 3.3V-OK | On-Rst-Inp PL | PB2 #72 |
 | V | 3V3 #12 | Pwr | N/A Pwr Imax=600mA | N/A | N/A |
-| V | GND #13 | Pwr | N/A Pwr | N/A | N/A |
+| V/E/X | GND #13 | Pwr | N/A Pwr | N/A | N/A |
 | V | VUSB #14 | Pwr | N/A Pwr input either Vision USB or XIAO USB | N/A | N/A |
 
 Notes: 
