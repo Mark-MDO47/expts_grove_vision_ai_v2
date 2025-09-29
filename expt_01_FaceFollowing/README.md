@@ -33,5 +33,18 @@ There are a range of really useful and detailed tutorials on the filtering circu
 - A faster PWM-based DAC - https://www.edn.com/a-faster-pwm-based-dac/
 - Cancel PWM DAC ripple with analog subtraction - https://www.edn.com/cancel-pwm-dac-ripple-with-analog-subtraction/
 
-Got this one from Google search
+Got these from Google search
 - Low Pass/High Pass Filter Calculator - https://www.digikey.com/en/resources/conversion-calculators/conversion-calculator-low-pass-and-high-pass-filter
+- Time Constant Calculator - https://www.digikey.com/en/resources/conversion-calculators/conversion-calculator-time-constant
+
+Using the above two calculators for a simple R/C filter, I think this will work
+| Parameter | Value | Formula |
+| --- | --- | --- |
+| Resistance | 5K Ohm | N/A |
+| Capacitance | 1 microFarad | N/A |
+| Time Constant | 5 milliSec | TC = Resistance * Capacitance |
+| Cutoff Frequency (-3dB) | 31.8 Hz | Fc = 1 / (2 * PI * Resistance * Capacitance) |
+
+The Time Constant is such that after a change of one voltage value to another, 1 time constant later the value has moved 63% of the distance. At 5 time constants it is about 99% of the way there.
+
+The Cutoff Frequency is at -3dB, which means that at that frequency and above the amplitude is reduce by 50% or more.
