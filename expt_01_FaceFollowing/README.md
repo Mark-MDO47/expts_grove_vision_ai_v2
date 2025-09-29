@@ -32,3 +32,6 @@ There are a range of really useful and detailed tutorials on the filtering circu
 - Combine two 8-bit outputs to make one 16-bit DAC - https://www.edn.com/combine-two-8-bit-outputs-to-make-one-16-bit-dac/
 - A faster PWM-based DAC - https://www.edn.com/a-faster-pwm-based-dac/
 - Cancel PWM DAC ripple with analog subtraction - https://www.edn.com/cancel-pwm-dac-ripple-with-analog-subtraction/
+
+Got this one from Google search
+- Low Pass/High Pass Filter Calculator - https://www.digikey.com/en/resources/conversion-calculators/conversion-calculator-low-pass-and-high-pass-filter
