@@ -20,7 +20,7 @@ The XIAO ESP32-C3 is small, capable, and I have some in my parts bin. Also it wo
 - XIAO C3 pinout - https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/XIAO-ESP32C3-pinout_sheet.xlsx
 - XIAO C3 schematic - https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/Seeeduino-XIAO-ESP32C3-SCH.pdf
 
-The Skull Project uses eyes made from Adafruit HalloWing M4 Express. These use the SAMD51 processor (ATSAMD51G18).
+The Skull Project uses eyes made from Adafruit HalloWing M4 Express. These use the SAMD51 processor (ATSAMD51J19).
 - https://www.adafruit.com/product/4300
 - http://ww1.microchip.com/downloads/en/DeviceDoc/60001507E.pdf
 
@@ -72,6 +72,8 @@ The Xiao ESP32-C3's PWM frequencies are flexible, with the LEDC peripheral suppo
 
 **Supported Range of LED PWM Frequency and Duty Resolutions**
 The LED PWM Controller is designed primarily to drive LEDs. It provides a large flexibility of PWM duty cycle settings. For instance, the PWM frequency of 5 kHz can have the maximum duty resolution of 13 bits. This means that the duty can be set anywhere from 0 to 100% with a resolution of ~ 0.012% (2 ** 13 = 8192 discrete levels of the LED intensity).
+
+I will use 5 kHz frequency
 
 ### HalloWing M4 Express SAMD51 Reads the Analog Signal
 [Top](#readme-\--analog-communication "Top")<br>
