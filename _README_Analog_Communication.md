@@ -95,15 +95,33 @@ It is possible to use DMA to move ADC results directly to memory or peripherals 
 The SAM D5x/E5x has two ADC instances, ADC0 and ADC1. The two inputs can be sampled simultaneously, as each ADC includes sample and hold circuits.
 
 Note: When the Peripheral Touch Controller (PTC) is enabled, ADC0 is serving the PTC exclusively. In this case, ADC0 cannot be used by the user application.
-- Fortunately, the PTC is not used for touch sensing with the Hallowing M4 eyes software; it uses normal analog input for touch sensing.
+- Fortunately, the PTC is not used for touch sensing with the Hallowing M4 eyes software; it uses normal digital input with timing for touch sensing.
 - The Skull Project software is found here in directory mdo_m4_skull_project (forked from Adafruit)
   - https://github.com/Mark-MDO47/mdo_m4_eyes
 - the bulk of my mods is in mdo_skull_project.cpp
 
 ### HalloWing M4 Express Pins to Use
 [Top](#readme-\--analog-communication "Top")<br>
-Near the on/off switch there are touch pads labeled A2 through A5.
+Near the on/off switch there are touch pads labeled A2 through A5. I will use A3 and A4.
 - https://learn.adafruit.com/adafruit-hallowing-m4/pinouts
 
+A2 is used for a touch control, the so-called "boop" button that causes the eyes to cross.
+- The code does some early measurements to find a threshold + 10% margin for the pin without a touch
+- readBoop() sets A2 HIGH (pulls some electrons from the pin) then measures how long for it to refill.
+- If a finger is touching, there was more capacitance so more electrons needed to refill -> takes longer
 
-https://learn.adafruit.com/adafruit-hallowing-m4/pinouts
+```C
+// don't overthink the following line; it just makes a constant int identifying A2
+GLOBAL_VAR int8_t  boopPin             GLOBAL_INIT(A2);
+
+static inline uint16_t readBoop(void) {
+  uint16_t counter = 0;
+  pinMode(boopPin, OUTPUT);
+  digitalWrite(boopPin, HIGH);
+  pinMode(boopPin, INPUT);
+  while(digitalRead(boopPin) && (++counter < 1000));
+  return counter;
+}
+```
+
+A3 through A5 are available for use; I will use A3 and A4.
