@@ -4,7 +4,12 @@ In these experiments I will communicate location data from an XAIO ESP32-C3 to t
 **Table Of Contents**
 * [Top](#readme-\--analog-communication "Top")
 * [Useful Documentation](#useful-documentation "Useful Documentation")
-* [Low-Pass Filter for PWM Analog](#low\-pass-filter-for-pwm-analog "Low-Pass Filter for PWM Analog")
+* [Low-Pass Filter for ESP32-C3 PWM Analog](#low\-pass-filter-for-esp32\-c3-pwm-analog "Low-Pass Filter for ESP32-C3 PWM Analog")
+  * [ESP32-C3 does not have Analog Outputs](#esp32\-c3-does-not-have-analog-outputs "ESP32-C3 does not have Analog Outputs")
+  * [Parameters for a good Low Pass Filter](#parameters-for-a-good-low-pass-filter "Parameters for a good Low Pass Filter")
+  * [PWM Frequency and Signal Accuracy](#pwm-frequency-and-signal-accuracy "PWM Frequency and Signal Accuracy")
+  * [HalloWing M4 Express SAMD51 Reads the Analog Signal](#hallowing-m4-express-samd51-reads-the-analog-signal "HalloWing M4 Express SAMD51 Reads the Analog Signal")
+  * [HalloWing M4 Express Pins to Use](#hallowing-m4-express-pins-to-use "HalloWing M4 Express Pins to Use")
 
 ## Useful Documentation
 [Top](#readme-\--analog-communication "Top")<br>
