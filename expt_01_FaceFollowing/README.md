@@ -88,5 +88,5 @@ Notes:
   - PH =Pull High, PL =Pull Low
 - Pin Domains:
   - SIF =1.8V only, PIF =1.8V or AON =1.8V or 3.3V (always on)
--  GND:
+- GND:
   - Instead of pulling ground from the pin on this connector, I plan to power via XIAO USB and distribute ground from there
