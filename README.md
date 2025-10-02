@@ -1,6 +1,8 @@
 # expts_grove_vision_ai_v2
 Experiments using Grove Vision-AI version 2 and SEEED Sensecraft
 
+<img src="https://github.com/Mark-MDO47/Skull-Project/blob/master/resources/images/TwoSkullsTwoHats_1024.jpg" width="800" alt="Two 2-eye Skulls and Control Boxes, one with Viking hat and one with Pirate hat">
+
 **Table Of Contents**
 * [Top](#expts_grove_vision_ai_v2 "Top")
 * [References](#references "References")
