@@ -190,10 +190,19 @@ In order to use with the XIAO ESP32-C3 hardware UART I started it this way:
 #define RX_PIN 20     // D7 on XIAO ESP32-C3
 #define TX_PIN 21     // D6 on XIAO ESP32-C3
 
+  // within setup() routine
+
+  Serial.begin(115200);   // Serial monitor
+  delay(1000);
+
   // Start hardware UART1 for communicating with Vision AI
   Serial1.begin(921600, SERIAL_8N1, RX_PIN, TX_PIN);
   // Initialize SSCMA library with Vision AI using UART
   if (!AI.begin(&Serial1)) {
+    Serial.println("Failed to initialize Vision AI V2 over UART!");
+    while (1);
+  }
+  Serial.println("Vision AI V2 initialized successfully!");
 ```
 
 ### AI Models
