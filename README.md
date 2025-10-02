@@ -6,7 +6,7 @@ Experiments using Grove Vision-AI version 2 and SEEED Sensecraft
 * [Module Ordering and Pinouts](#module-ordering-and-pinouts "Module Ordering and Pinouts")
   * [Vision-AI V2](#vision\-ai-v2 "Vision-AI V2")
   * [XIAO ESP32-C3](#xiao-esp32\-c3 "XIAO ESP32-C3")
-  * [XIAO Connector On Vision AI V2](#xiao-connector-on-vision-ai-v2 "XIAO Connector On Vision AI V2")
+  * [XIAO Connector On Vision-AI V2](#xiao-connector-on-vision-ai-v2 "XIAO Connector On Vision-AI V2")
   * [OV5647 Camera Module](#ov5647-camera-module "OV5647 Camera Module")
   * [Future Possibilities](#future-possibilities "Future Possibilities")
 * [References](#references "References")
@@ -33,16 +33,16 @@ Experiments using Grove Vision-AI version 2 and SEEED Sensecraft
 ### Vision-AI V2
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
 The Vision-AI V2 module can be ordered here or at several other sources, either as just the module or as a Kit including camera and ESP32-C3.
-- Vision AI V2 only - https://www.seeedstudio.com/Grove-Vision-AI-Module-V2-p-5851.html
-- Vision AI V2 kit - https://www.seeedstudio.com/Grove-Vision-AI-V2-Kit-p-5852.html
+- Vision-AI V2 only - https://www.seeedstudio.com/Grove-Vision-AI-Module-V2-p-5851.html
+- Vision-AI V2 kit - https://www.seeedstudio.com/Grove-Vision-AI-V2-Kit-p-5852.html
 - Himax chip datasheet - https://files.seeedstudio.com/wiki/grove-vision-ai-v2/HX6538_datasheet.pdf
-- Vision AI V2 schematic - https://files.seeedstudio.com/wiki/grove-vision-ai-v2/Grove_Vision_AI_Module_V2_Circuit_Diagram.pdf
-- Vision AI V2 layout - https://files.seeedstudio.com/wiki/grove-vision-ai-v2/Grove_Vision_AI_Module_V2_Layout.zip
-- EXCELLENT LIST of detailed documents for Vision AI-  https://forum.seeedstudio.com/t/a-collection-of-useful-links-for-those-developing-applications-for-grove-vision-ai-v2/280236
+- Vision-AI V2 schematic - https://files.seeedstudio.com/wiki/grove-vision-ai-v2/Grove_Vision_AI_Module_V2_Circuit_Diagram.pdf
+- Vision-AI V2 layout - https://files.seeedstudio.com/wiki/grove-vision-ai-v2/Grove_Vision_AI_Module_V2_Layout.zip
+- EXCELLENT LIST of detailed documents for Vision-AI-  https://forum.seeedstudio.com/t/a-collection-of-useful-links-for-those-developing-applications-for-grove-vision-ai-v2/280236
 
 ### XIAO ESP32-C3
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
-I plan to connect the Vision-AI V2 to a XIAO ESP32-C3 because it is small, capable, and I have some in my parts bin. Also, the XIAO ESP32-C3 is used in the Vision AI V2 Kit above.
+I plan to connect the Vision-AI V2 to a XIAO ESP32-C3 because it is small, capable, and I have some in my parts bin. Also, the XIAO ESP32-C3 is used in the Vision-AI V2 Kit above.
 - XIAO ESP32-C3 "soldered" - https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C3-Pre-Soldered-p-6331.html
 - XIAO ESP32-C3 "tape & reel" - https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C3-Tape-Reel-p-6471.html
 - XIAO ESP32-C3 WiFi 2.4GHz antenna - https://www.seeedstudio.com/2-4GHz-FPC-Antenna-2-9dBi-for-XIAO-ESP32C3-p-6439.html
@@ -57,18 +57,18 @@ I plan to connect the Vision-AI V2 to a XIAO ESP32-C3 because it is small, capab
 
 Having an ESP32 with WiFi available will allow me to use my Universal Remote - https://github.com/Mark-MDO47/UniRemote
 
-### XIAO Connector On Vision AI V2
+### XIAO Connector On Vision-AI V2
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
 In trying to decide which pins to route to directly to the XIAO header and which to use externally, I found this helpful. Info gathered from:
 - XIAO C3 pinout - https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/XIAO-ESP32C3-pinout_sheet.xlsx
 - getting started with XIAO C3 - https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/
-- Vision AI V2 schematic - https://files.seeedstudio.com/wiki/grove-vision-ai-v2/Grove_Vision_AI_Module_V2_Circuit_Diagram.pdf
+- Vision-AI V2 schematic - https://files.seeedstudio.com/wiki/grove-vision-ai-v2/Grove_Vision_AI_Module_V2_Circuit_Diagram.pdf
 - Himax chip datasheet - https://files.seeedstudio.com/wiki/grove-vision-ai-v2/HX6538_datasheet.pdf
 
 In the following table the **My Use** column:
-- V - connect through to Vision AI V2
+- V - connect through to Vision-AI V2
 - E - connect to my Skull-Eyeball project (https://github.com/Mark-MDO47/Skull-Project)
-- X - reserve for future use external to Vision AI V2
+- X - reserve for future use external to Vision-AI V2
 
 | My Use | XIAO pin | XIAO usage | HX6538-A usage | HX Reset | HX pin |
 | --- | --- | --- | --- | --- | --- |
@@ -97,7 +97,7 @@ Notes:
 
 ### OV5647 Camera Module
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
-The OV5647 camera module is also available separately with different fisheye lense configurations; several are shown here. I have the ones from Amazon; both -62 and -160/95deg work with Vision AI V2.
+The OV5647 camera module is also available separately with different fisheye lense configurations; several are shown here. I have the ones from Amazon; both -62 and -160/95deg work with Vision-AI V2.
 - OV5647-62 module - https://www.seeedstudio.com/OV5647-69-1-FOV-Camera-module-for-Raspberry-Pi-3B-4B-p-5484.html
 - OV5647-160 module - https://www.seeedstudio.com/OV5647-160-FOV-IR-Camera-module-for-Raspberry-Pi-3B-4B-p-5485.html
 - OV5647-62 module - https://www.amazon.com/dp/B012V1HEP4?th=1
@@ -138,12 +138,12 @@ https://wiki.seeedstudio.com/grove_vision_ai_v2/ search for **Boot / Reset / Fla
 
 ### Installing Seeed_Arduino_SSCMA Communication Library into Arduino IDE
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
-Be aware that there are three things named Seeed SenseCraft Model Assistant and referred to as SSCMA
-1. https://github.com/Seeed-Studio/Seeed_Arduino_SSCMA - Seeed_Arduino_SSCMA - a library for use in Arduino IDE to assist in communicating with AI models running on a different hardware module
-1. https://github.com/Seeed-Studio/SSCMA-Micro - SSCMA-Micro - a cross-platform machine learning inference framework - implements digital image processing, neural network inferencing, AT command interaction, and more
-1. https://wiki.seeedstudio.com/ModelAssistant_Introduce_Overview - Seeed SenseCraft (AI) Model Assistant - an open-source project focused on embedded AI including tools and a model zoo
+Be aware that there are three things related to Seeed SenseCraft Model Assistant and referred to as SSCMA
+1. https://github.com/Seeed-Studio/Seeed_Arduino_SSCMA - Seeed_Arduino_SSCMA - a library for use in Arduino IDE to assist in communicating with AI models running on a different hardware module - included in XIAO ESP32-C3 code
+1. https://github.com/Seeed-Studio/SSCMA-Micro - SSCMA-Micro - a cross-platform machine learning inference framework - implements digital image processing, neural network inferencing, AT command interaction, and more - included in Vision-AI V2 code
+1. https://wiki.seeedstudio.com/ModelAssistant_Introduce_Overview - Seeed SenseCraft (AI) Model Assistant - an open-source project focused on embedded AI including tools and a model zoo - on the web
 
-I will use the Seeed_Arduino_SSCMA library to communicate with the Grove Vision-AI V2.
+I will use the Seeed_Arduino_SSCMA library on the XIAO ESP32-C3 to communicate with the Grove Vision-AI V2 which is using SSCMA-Micro. I will use Seeed SenseCraft (AI) Model Assistant to load my vision models onto the Vision-AI V2
 
 https://github.com/Seeed-Studio/Seeed_Arduino_SSCMA says to download a zip file and add the library to your Arduino IDE by selecting **Sketch > Include Library > Add .ZIP Library**
 - They don't explicitly say it but they expect you to click on the green **Code** button and choose **Download ZIP**
@@ -155,10 +155,24 @@ The Seeed_Arduino_SSCMA library is alternatively now available by searching in t
  
 Look in https://github.com/Seeed-Studio/Seeed_Arduino_SSCMA/blob/main/src/Seeed_Arduino_SSCMA.h to see available options in class SSCMA.
 - **SSCMA** methods start after **public:**.
-  - Has initialization routines for I2C (TwoWire), SPI, or UART communication. UART baud rate is 921,600.
+  - Has initialization routines for I2C (TwoWire), SPI, or UART communication. UART baud rate is 921,600, I2C is either 100KHz or 400KHz.
 - **AT**-style commands start near **CMD_AT_ID**
   - AT commands wiki - https://wiki.seeedstudio.com/grove_vision_ai_v2_at/
   - AT protocol documentation - https://github.com/Seeed-Studio/SSCMA-Micro/blob/1.0.x/docs/protocol/at_protocol.md
+
+According to ChatGPT-5 the speed difference between I2C and UART with SSCMA (SenseCraft Smart Camera Middleware API) on the Grove Vision-AI V2 is significant.
+- I2C speed
+  - Runs at standard 100 kHz or fast 400 kHz bus speeds (configurable).
+  - Effective throughput: ~20–30 KB/s max at 400 kHz.
+  - Suitable for commands, control, and small inference results (like classification labels or bounding box data).
+  - Not suitable for image streaming or large model data transfers — it will quickly bottleneck.
+- UART speed
+  - SSCMA UART defaults to 921600 baud (~ 0.92 Mbps).
+  - Can sometimes be lowered (115200, 460800) if needed, but 921600 is recommended for tasks transfering vision data.
+  - Effective throughput: ~90–100 KB/s real-world.
+  - Good enough for sending inference results quickly and even compressed image chunks if needed.
+  - Must use hardware UART (software serial usually insufficient).
+  - Much faster and more reliable for continuous AI tasks compared to I²C.
 
 ### Usage of Seeed_Arduino_SSCMA Library
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
@@ -172,10 +186,12 @@ For example, when using the Grove Vision-AI V2, the begin() function with no arg
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
 There are several ways to get a model into the Vision-AI V2 module; below are some of them I have found.
 
-Be aware that there are three things named Seeed SenseCraft Model Assistant and referred to as SSCMA
-1. https://github.com/Seeed-Studio/Seeed_Arduino_SSCMA - Seeed_Arduino_SSCMA - a library for use in Arduino IDE to assist in communicating with AI models running on a different hardware module
-1. https://github.com/Seeed-Studio/SSCMA-Micro - SSCMA-Micro - a cross-platform machine learning inference framework - implements digital image processing, neural network inferencing, AT command interaction, and more
-1. https://wiki.seeedstudio.com/ModelAssistant_Introduce_Overview - Seeed SenseCraft (AI) Model Assistant - an open-source project focused on embedded AI including tools and a model zoo
+Be aware that there are three things related to Seeed SenseCraft Model Assistant and referred to as SSCMA
+1. https://github.com/Seeed-Studio/Seeed_Arduino_SSCMA - Seeed_Arduino_SSCMA - a library for use in Arduino IDE to assist in communicating with AI models running on a different hardware module - included in XIAO ESP32-C3 code
+1. https://github.com/Seeed-Studio/SSCMA-Micro - SSCMA-Micro - a cross-platform machine learning inference framework - implements digital image processing, neural network inferencing, AT command interaction, and more - included in Vision-AI V2 code
+1. https://wiki.seeedstudio.com/ModelAssistant_Introduce_Overview - Seeed SenseCraft (AI) Model Assistant - an open-source project focused on embedded AI including tools and a model zoo - on the web
+
+I will use the Seeed_Arduino_SSCMA library on the XIAO ESP32-C3 to communicate with the Grove Vision-AI V2 which is using SSCMA-Micro. I will use Seeed SenseCraft (AI) Model Assistant to load my vision models onto the Vision-AI V2
 
 #### SenseCraft
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
@@ -217,7 +233,7 @@ Be aware that there are two things named Seeed SenseCraft Model Assistant and re
 
 In the Model Export section we will use tools from the SSCMA open-source project.
 
-NOTE: Due to the size limitation, currently both XIAO ESP32S3 and Grove Vision AI V2 only support int8 format models.
+NOTE: Due to the size limitation, currently both XIAO ESP32S3 and Grove Vision-AI V2 only support int8 format models.
 
 NOTE: here is the start of SEEED Studio docs on how to do this:
 - https://wiki.seeedstudio.com/grove_vision_ai_v2_sscma/
@@ -231,9 +247,9 @@ NOTE: here is a Hackster.io example of how to do this
 NOTE: this Youtube shows an example project to detect different birds: https://www.youtube.com/watch?v=zdrtL1XDRn0&list=PLmOy82pCgLFnYoYTYNyQQvGa9bUU7hC5K
 - Shows how to export a trained model to SenseCraft
 - Shows how to download the inverence picture (third param = true on inference call)
-- Lots of good practical info from an actual Vision AI V2 project
+- Lots of good practical info from an actual Vision-AI V2 project
 
-To deploy an Ultralytics model to a Seeed Grove Vision AI V2, we convert the model to the specific format required by the device's Himax WiseEye2 processor. The deployment process is managed by Seeed Studio's SenseCraft AI platform, which handles the flashing of the converted model onto the hardware. [1] [2] [3]
+To deploy an Ultralytics model to a Seeed Grove Vision-AI V2, we convert the model to the specific format required by the device's Himax WiseEye2 processor. The deployment process is managed by Seeed Studio's SenseCraft AI platform, which handles the flashing of the converted model onto the hardware. [1] [2] [3]
 
 ### Export an Ultralytics Model 
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
@@ -260,12 +276,12 @@ NOTE: read these forum entries to get Python dependencies correct:
 
 ### Use SenseCraft AI to deploy the model 
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
-With the converted model, we can now use the SenseCraft AI platform to flash it to the Vision AI V2 device. 
+With the converted model, we can now use the SenseCraft AI platform to flash it to the Vision-AI V2 device. 
 
-1. Connect the Grove Vision AI V2 to your computer using a USB-C cable. 
+1. Connect the Grove Vision-AI V2 to your computer using a USB-C cable. 
 1. Navigate to the SenseCraft AI Model Assistant webpage in your browser. 
-1. In the web interface, click on Device Workspace, then select Grove - Vision AI V2. 
-1. Click the Connect button and select the serial port for the Vision AI V2 device from the pop-up window. 
+1. In the web interface, click on Device Workspace, then select Grove - Vision-AI V2. 
+1. Click the Connect button and select the serial port for the Vision-AI V2 device from the pop-up window. 
 1. After connecting, select the option to Upload Custom AI Model. 
 1. You will be prompted to provide the model name, your  model file, and the list of labels used for your dataset. 
 1. Click Send Model to begin the upload process. The flashing can take several minutes. [1] [5] [6] [7]  
