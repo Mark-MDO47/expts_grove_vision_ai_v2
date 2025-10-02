@@ -7,6 +7,7 @@ In these experiments I will communicate location data from an XAIO ESP32-C3 to t
 * [Low-Pass Filter for PWM Analog](#low\-pass-filter-for-pwm-analog "Low-Pass Filter for PWM Analog")
 
 ## Useful Documentation
+[Top](#readme-\--analog-communication "Top")<br>
 The XIAO ESP32-C3 is small, capable, and I have some in my parts bin. Also it works with the "XIAO connector" on the Vision-AI V2.
 - XIAO ESP32-C3 "soldered" - https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C3-Pre-Soldered-p-6331.html
 - XIAO ESP32-C3 "tape & reel" - https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C3-Tape-Reel-p-6471.html
@@ -21,7 +22,7 @@ The Skull Project uses eyes made from Adafruit HalloWing M4 Express. These use t
 Because the Skull Project eyes are pretty busy just displaying the eyes, I don't want to interrupt them at random times with an I2C or UART message. Thus I plan to output the position information on two ESP32-C3 Analog channels, and the SAMD51 in the eyes can sample the information at any convenient time that doesn't interrupt its processing.
 
 ## Low-Pass Filter for PWM Analog
-
+[Top](#readme-\--analog-communication "Top")<br>
 Surprise (to me) - The ESP32-C3 does not have analog outputs. It uses PWM to approximate analog outputs.
 - I just realized I was looking at the Analog-to-Digital capabilities (ADC for analog input) instead of the Digital-to-Analog capabilities. The XIAO ESP32-C3 only has D10 with DAC.
 - I will start by using the ESP32 LEDC library for analog output; that way I can use the same code for both analog outputs. I may need to implement filtering on the analog outputs so the SAMD51 can do reliable sensing.
