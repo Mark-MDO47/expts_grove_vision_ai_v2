@@ -49,7 +49,7 @@ The Time Constant is such that after a change of one voltage value to another, 1
 
 The Cutoff Frequency is at -3dB, which means that at that frequency and above the amplitude is reduce by 50% or more.
 
-### XIAO Connector On Vision-AI V2
+## XIAO Connector On Vision-AI V2
 [Top](#experiment-01-\--face-following "Top")<br>
 In trying to decide which pins to route to directly to the XIAO header and which to use externally, I found this helpful. Info gathered from:
 - XIAO C3 pinout - https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/XIAO-ESP32C3-pinout_sheet.xlsx
