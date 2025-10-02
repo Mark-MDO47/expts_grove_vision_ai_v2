@@ -34,6 +34,34 @@ Documentation for using Vision-AI V2
 - https://github.com/HimaxWiseEyePlus/Seeed_Grove_Vision_AI_Module_V2/tree/main
 - https://wiki.seeedstudio.com/No-code-Edge-AI-Tool/
 
+### Hardware Info
+[Top](#expts_grove_vision_ai_v2 "Top")<br>
+The following link captures hardware information about the Seeed Studio Vision-AI V2 and XIAO ESP32-C3 used in this project.
+- https://github.com/Mark-MDO47/expts_grove_vision_ai_v2/blob/master/_README_Hardware.md
+
+The following link contains information about the Skull Project and its Adafruit HalloWing M4 Express
+- https://github.com/Mark-MDO47/Skull-Project
+
+### Analog Communications Info
+[Top](#expts_grove_vision_ai_v2 "Top")<br>
+The following link captures hardware/software information about the analog communication from XIAO ESP32-C3 to HalloWing M4 Express SAMD51
+- https://github.com/Mark-MDO47/expts_grove_vision_ai_v2/blob/master/_README_Analog_Communication.md
+
+### Use of Existing Software
+[Top](#expts_grove_vision_ai_v2 "Top")<br>
+The Skull Project software is found here in directory mdo_m4_skull_project (forked from Adafruit)
+- https://github.com/Mark-MDO47/mdo_m4_eyes
+- the bulk of my mods is in mdo_skull_project.cpp
+
+My LEDC PWM software for ESP32 analog outputs is here, though I might simplify it for this purpose.
+- https://github.com/Mark-MDO47/DuelWithBanjos/tree/master/code/LEDPinsPwmTemplate
+
+My Over-The-Air (OTA) Updating software is here
+- https://github.com/Mark-MDO47/UniRemote/tree/master/code/mdo_use_ota_webupdater
+
+My Universal Remote commanding over WiFi via ESP-NOW software is here
+- https://github.com/Mark-MDO47/UniRemote/tree/master/code/UniRemoteRcvrTemplate
+
 ### Reset or Update Flash Memory
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
 https://wiki.seeedstudio.com/grove_vision_ai_v2/ search for **Boot / Reset / Flashed Driver** or **Bootloader Recovery Tool Manual**
