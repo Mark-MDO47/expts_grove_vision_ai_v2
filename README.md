@@ -273,7 +273,7 @@ There is a demo project that does face following with a fan:
 
 My first usage will be to add face following to my Skull Project https://github.com/Mark-MDO47/Skull-Project. We want to make the eyes follow the face detected by the Vision-AI V2.
 
-The Skull Project uses eyes made from Adafruit HalloWing M4 Express. These use the SAMD51 processor (ATSAMD51G18).
+The Skull Project uses eyes made from Adafruit HalloWing M4 Express. These use the SAMD51 processor (ATSAMD51J19).
 - https://www.adafruit.com/product/4300
 - http://ww1.microchip.com/downloads/en/DeviceDoc/60001507E.pdf
 
