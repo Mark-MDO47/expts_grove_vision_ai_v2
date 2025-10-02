@@ -4,6 +4,8 @@ From https://github.com/Mark-MDO47/expts_grove_vision_ai_v2
 **Table Of Contents**
 * [Top](#experiment-01-\--face-following "Top")
 * [Introduction](#introduction "Introduction")
+  * [Low-Pass Filter for PWM Analog](#low\-pass-filter-for-pwm-analog "Low-Pass Filter for PWM Analog")
+* [XIAO Connector On Vision-AI V2](#xiao-connector-on-vision\-ai-v2 "XIAO Connector On Vision-AI V2")
 
 ## Introduction
 There is a demo project that does face following with a fan:
