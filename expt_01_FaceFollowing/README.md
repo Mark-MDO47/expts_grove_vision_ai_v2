@@ -1,6 +1,8 @@
 # Experiment 01 - Face Following
 From https://github.com/Mark-MDO47/expts_grove_vision_ai_v2
 
+<img src="https://github.com/Mark-MDO47/Skull-Project/blob/master/resources/images/TwoSkullsTwoHats_1024.jpg" width="800" alt="Two 2-eye Skulls and Control Boxes, one with Viking hat and one with Pirate hat">
+
 **Table Of Contents**
 * [Top](#experiment-01-\--face-following "Top")
 * [Introduction](#introduction "Introduction")
