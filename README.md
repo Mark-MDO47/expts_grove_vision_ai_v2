@@ -183,6 +183,18 @@ For example, when using the Grove Vision-AI V2, the begin() function with no arg
 - Initializes the I2C communication protocol using the default Wire object.
 - Uses the default I2C address (I2C_ADDRESS) to identify and communicate with the device.
 
+In order to use with the XIAO ESP32-C3 hardware UART I started it this way:
+```C
+// Define pins for Seeed XIAO ESP32-C3
+// GPIO20 = RX, GPIO21 = TX
+#define RX_PIN 20     // D7 on XIAO ESP32-C3
+#define TX_PIN 21     // D6 on XIAO ESP32-C3
+
+  // Start hardware UART1 for Vision AI
+  Serial1.begin(921600, SERIAL_8N1, RX_PIN, TX_PIN);
+  // Initialize SSCMA library with Vision AI UART
+  if (!AI.begin(&Serial1)) {
+```
 
 ### AI Models
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
