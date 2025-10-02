@@ -93,10 +93,10 @@ void setup() {
   delay(1000);
   Serial.println("Starting Grove Vision AI V2 test (UART)...");
 
-  // Start hardware UART1 for Vision AI
+  // Start hardware UART1 for communicating with Vision AI
   Serial1.begin(921600, SERIAL_8N1, RX_PIN, TX_PIN);
 
-  // Initialize SSCMA library with Vision AI UART
+  // Initialize SSCMA library with Vision AI using UART
   if (!AI.begin(&Serial1)) {
     Serial.println("Failed to initialize Vision AI V2 over UART!");
     while (1);
