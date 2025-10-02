@@ -130,3 +130,5 @@ static inline uint16_t readBoop(void) {
 ```
 
 A3 through A5 are available for use; I will use A3 and A4.
+
+This leaves A5 available if I want to do something with blinking (blinkPin).
