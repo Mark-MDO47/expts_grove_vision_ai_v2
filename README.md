@@ -94,8 +94,8 @@ Notes:
   - PH =Pull High, PL =Pull Low
 - Pin Domains:
   - SIF =1.8V only, PIF =1.8V or AON =1.8V or 3.3V (always on)
--  GND:
-  -  Instead of pulling ground from the pin on this connector, I plan to power via XIAO USB and distribute ground from there
+- GND:
+  - Instead of pulling ground from the pin on this connector, I plan to power via XIAO USB and distribute ground from there
 
 ### OV5647 Camera Module
 [Top](#expts_grove_vision_ai_v2 "Top")<br>
