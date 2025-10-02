@@ -75,7 +75,7 @@ In the following table the **My Use** column:
 | X | D0/A0 #1 | Dig/Ana | GP I/O FS PL AON 3.3V-OK  | On-Rst-Inp PL |  PA0 #18 |
 | E | D1/A1 #2 | Dig/Ana | GP I/O FS PL 3.3V-OK | On-Rst-Inp PL | PB11 #46 |
 | E | D2/A2 #3 | Dig/Ana | GP I/O FS PL 3.3V-OK | On-Rst-Inp PL | PB8 #94 |
-| V | D3/A3 #4 | Dig/C3-NOT-Ana | On-Rst-LO I FS PH AON 3.3V-OK | RESETN #17 |
+| V | D3/A3 #4 | Dig/C3-NOT-Ana | On-Rst-LO I FS PH AON 3.3V-OK | N/A | RESETN #17 |
 | X | D4/SDA #5 | Dig/IIC | GP/IIC-SDA I/O FS  | On-Rst-Inp PH | PA3 #24 |
 | X | D5/SCL #6 | Dig/IIC | GP/IIC-SCL I/O FS | On-Rst-Inp PH | PA2 #23 |
 | V | D6/TX #7 | Dig/UART | GP/UART-RX I/O FS PL 3.3V-OK | On-Rst-Inp PL | PB6 #92 |
