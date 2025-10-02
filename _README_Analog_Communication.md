@@ -73,7 +73,15 @@ The Xiao ESP32-C3's PWM frequencies are flexible, with the LEDC peripheral suppo
 **Supported Range of LED PWM Frequency and Duty Resolutions**
 The LED PWM Controller is designed primarily to drive LEDs. It provides a large flexibility of PWM duty cycle settings. For instance, the PWM frequency of 5 kHz can have the maximum duty resolution of 13 bits. This means that the duty can be set anywhere from 0 to 100% with a resolution of ~ 0.012% (2 ** 13 = 8192 discrete levels of the LED intensity).
 
-I will use 5 kHz frequency
+### HalloWing M4 Express Display and Frequency and Resolution
+[Top](#readme-\--analog-communication "Top")<br>
+The HalloWing M4 Express has a 1.54" 240x240 full color IPS TFT.
+
+My goals are
+- At least 4*240 = 960 discrete levels of analog signal. Less than 1024 (nearest higher power of 2).
+- Use highest practical PWM frequency that supports this so that low-pass filter removes most of the extraneous energy.
+
+Since 5 kHz seems like a practical upper limit on PWM frequency for stability and that provides 8192 discrete levels, I will use 5 kHz frequency.
 
 ### HalloWing M4 Express SAMD51 Reads the Analog Signal
 [Top](#readme-\--analog-communication "Top")<br>
