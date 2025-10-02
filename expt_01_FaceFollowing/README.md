@@ -6,6 +6,7 @@ From https://github.com/Mark-MDO47/expts_grove_vision_ai_v2
 **Table Of Contents**
 * [Top](#experiment-01-\--face-following "Top")
 * [Introduction](#introduction "Introduction")
+* [Did Nobody Mention there would be Problems with Analog Signals?](#did-nobody-mention-there-would-be-problems-with-analog-signals "Did Nobody Mention there would be Problems with Analog Signals?")
 
 ## Introduction
 [Top](#experiment-01-\--face-following "Top")<br>
