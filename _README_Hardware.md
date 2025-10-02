@@ -9,12 +9,8 @@
   * [XIAO Connector On Vision-AI V2](#xiao-connector-on-vision\-ai-v2 "XIAO Connector On Vision-AI V2")
   * [Future Possibilities](#future-possibilities "Future Possibilities")
 
-
-## Module Ordering and Pinouts
-
-
-### Vision-AI V2
-
+## Vision-AI V2
+[Top](#readme-\--hardware "Top")<br>
 The Vision-AI V2 module can be ordered here or at several other sources, either as just the module or as a Kit including camera and ESP32-C3.
 - Vision-AI V2 only - https://www.seeedstudio.com/Grove-Vision-AI-Module-V2-p-5851.html
 - Vision-AI V2 kit - https://www.seeedstudio.com/Grove-Vision-AI-V2-Kit-p-5852.html
@@ -23,8 +19,8 @@ The Vision-AI V2 module can be ordered here or at several other sources, either 
 - Vision-AI V2 layout - https://files.seeedstudio.com/wiki/grove-vision-ai-v2/Grove_Vision_AI_Module_V2_Layout.zip
 - EXCELLENT LIST of detailed documents for Vision-AI-  https://forum.seeedstudio.com/t/a-collection-of-useful-links-for-those-developing-applications-for-grove-vision-ai-v2/280236
 
-### XIAO ESP32-C3
-
+## XIAO ESP32-C3
+[Top](#readme-\--hardware "Top")<br>
 I plan to connect the Vision-AI V2 to a XIAO ESP32-C3 because it is small, capable, and I have some in my parts bin. Also, the XIAO ESP32-C3 is used in the Vision-AI V2 Kit above.
 - XIAO ESP32-C3 "soldered" - https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C3-Pre-Soldered-p-6331.html
 - XIAO ESP32-C3 "tape & reel" - https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C3-Tape-Reel-p-6471.html
@@ -40,8 +36,8 @@ I plan to connect the Vision-AI V2 to a XIAO ESP32-C3 because it is small, capab
 
 Having an ESP32 with WiFi available will allow me to use my Universal Remote - https://github.com/Mark-MDO47/UniRemote
 
-### OV5647 Camera Module
-
+## OV5647 Camera Module
+[Top](#readme-\--hardware "Top")<br>
 The OV5647 camera module is also available separately with different fisheye lense configurations; several are shown here. I have the ones from Amazon; both -62 and -160/95deg work with Vision-AI V2.
 - OV5647-62 module - https://www.seeedstudio.com/OV5647-69-1-FOV-Camera-module-for-Raspberry-Pi-3B-4B-p-5484.html
 - OV5647-160 module - https://www.seeedstudio.com/OV5647-160-FOV-IR-Camera-module-for-Raspberry-Pi-3B-4B-p-5485.html
@@ -54,8 +50,8 @@ The OV5647 camera module is also available separately with different fisheye len
   - Blue strip visible when inserting in connector
   - https://files.seeedstudio.com/wiki/grove-vision-ai-v2/9.gif
 
-### XIAO Connector On Vision-AI V2
-
+## XIAO Connector On Vision-AI V2
+[Top](#readme-\--hardware "Top")<br>
 In trying to decide which pins to route to directly to the XIAO header and which to use externally, I found this helpful. Info gathered from:
 - XIAO C3 pinout - https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/XIAO-ESP32C3-pinout_sheet.xlsx
 - getting started with XIAO C3 - https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/
@@ -94,7 +90,8 @@ Notes:
 - GND:
   - Instead of pulling ground from the pin on this connector, I plan to power via XIAO USB and distribute ground from there
 
-### Future Possibilities
+## Future Possibilities
+[Top](#readme-\--hardware "Top")<br>
 Future plans may include a display to show the image, maybe using the ESP32-2432S028R (Cheap Yellow Display or CYD) based on ESP32-D0WDQ6 controller instead of the XIAO ESP32-C3
 - https://www.aliexpress.us/item/3256805697430313.html
 - Would need to transfer image
