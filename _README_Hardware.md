@@ -2,12 +2,11 @@
 
 **Table Of Contents**
 * [Top](#readme-\--hardware "Top")
-* [Module Ordering and Pinouts](#module-ordering-and-pinouts "Module Ordering and Pinouts")
-  * [Vision-AI V2](#vision\-ai-v2 "Vision-AI V2")
-  * [XIAO ESP32-C3](#xiao-esp32\-c3 "XIAO ESP32-C3")
-  * [OV5647 Camera Module](#ov5647-camera-module "OV5647 Camera Module")
-  * [XIAO Connector On Vision-AI V2](#xiao-connector-on-vision\-ai-v2 "XIAO Connector On Vision-AI V2")
-  * [Future Possibilities](#future-possibilities "Future Possibilities")
+* [Vision-AI V2](#vision\-ai-v2 "Vision-AI V2")
+* [XIAO ESP32-C3](#xiao-esp32\-c3 "XIAO ESP32-C3")
+* [OV5647 Camera Module](#ov5647-camera-module "OV5647 Camera Module")
+* [XIAO Connector On Vision-AI V2](#xiao-connector-on-vision\-ai-v2 "XIAO Connector On Vision-AI V2")
+* [Future Possibilities](#future-possibilities "Future Possibilities")
 
 ## Vision-AI V2
 [Top](#readme-\--hardware "Top")<br>
