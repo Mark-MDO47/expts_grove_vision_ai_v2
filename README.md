@@ -248,7 +248,7 @@ NOTE: here is a Hackster.io example of how to do this
 
 NOTE: this Youtube shows an example project to detect different birds: https://www.youtube.com/watch?v=zdrtL1XDRn0&list=PLmOy82pCgLFnYoYTYNyQQvGa9bUU7hC5K
 - Shows how to export a trained model to SenseCraft
-- Shows how to download the inverence picture (third param = true on inference call)
+- Shows how to download the inference picture (third param = true on inference call)
 - Lots of good practical info from an actual Vision-AI V2 project
 
 To deploy an Ultralytics model to a Seeed Grove Vision-AI V2, we convert the model to the specific format required by the device's Himax WiseEye2 processor. The deployment process is managed by Seeed Studio's SenseCraft AI platform, which handles the flashing of the converted model onto the hardware. [1] [2] [3]
