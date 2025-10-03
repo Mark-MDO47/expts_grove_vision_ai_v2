@@ -37,7 +37,8 @@ I plan to connect the Vision-AI V2 to a XIAO ESP32-C3 because it is small, capab
 - XIAO C3 pinout - https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/XIAO-ESP32C3-pinout_sheet.xlsx
 - XIAO C3 schematic - https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/Seeeduino-XIAO-ESP32C3-SCH.pdf
 
-Having an ESP32 with WiFi available will allow me to use my Universal Remote - https://github.com/Mark-MDO47/UniRemote
+Having an ESP32 with WiFi available will allow me to use my Universal Remote for commanding.
+- https://github.com/Mark-MDO47/UniRemote
 
 ## OV5647 Camera Module
 [Top](#readme-\--hardware "Top")<br>
