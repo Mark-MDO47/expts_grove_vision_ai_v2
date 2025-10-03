@@ -36,4 +36,5 @@ The result of all that is:
   - The ATSAMD51 will sample the analog signals periodically, without interruption to its processing
   - The HalloWing M4 Express has a 1.54" display 240x240 full color IPS TFT
   - Thus there will be approximately 32 discrete levels of analog voltage for each pixel in each direction
-  - That is a little overkill, but the key factor is 5 kHz which provides stability for the analog voltages
+    - That is a little overkill, but the key factor is 5 kHz which provides stability for the analog voltages
+  - My first cut will be to use the HalloWing M4 Express internal 3.3V reference, but it is possible to use the external AREF pin.
