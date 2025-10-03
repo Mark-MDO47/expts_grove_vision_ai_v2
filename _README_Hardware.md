@@ -24,7 +24,7 @@ The Vision-AI V2 module can be ordered here or at several other sources, either 
 
 ## XIAO ESP32-C3
 [Top](#readme-\--hardware "Top")<br>
-I plan to connect the Vision-AI V2 to a XIAO ESP32-C3 because it is small, capable, and I have some in my parts bin. Also, the XIAO ESP32-C3 is used in the Vision-AI V2 Kit above.
+I plan to connect the Vision-AI V2 to a XIAO ESP32-C3 because it is small, capable, and I have some in my parts bin. Also, the XIAO ESP32-C3 is used in the Vision-AI V2 Kit above. Note that I started with the "unsoldered" version and installed headers with some pins down to the Vision-AI V2 XIAO header and some pins up for external usage.
 - XIAO ESP32-C3 "soldered" - https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C3-Pre-Soldered-p-6331.html
 - XIAO ESP32-C3 "tape & reel" - https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C3-Tape-Reel-p-6471.html
 - XIAO ESP32-C3 WiFi 2.4GHz antenna - https://www.seeedstudio.com/2-4GHz-FPC-Antenna-2-9dBi-for-XIAO-ESP32C3-p-6439.html
