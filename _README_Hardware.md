@@ -56,15 +56,15 @@ The OV5647 camera module is also available separately with different fisheye len
 
 ## XIAO Connector On Vision-AI V2
 [Top](#readme-\--hardware "Top")<br>
-In trying to decide which pins to route to directly to the XIAO header and which to use externally, I found this helpful. Info gathered from:
+In trying to decide which pins to route to directly to the Vision-AI V2 XIAO header and which to use externally, I found this helpful. Info gathered from:
 - XIAO C3 pinout - https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/XIAO-ESP32C3-pinout_sheet.xlsx
 - getting started with XIAO C3 - https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/
 - Vision-AI V2 schematic - https://files.seeedstudio.com/wiki/grove-vision-ai-v2/Grove_Vision_AI_Module_V2_Circuit_Diagram.pdf
 - Himax chip datasheet - https://files.seeedstudio.com/wiki/grove-vision-ai-v2/HX6538_datasheet.pdf
 
 In the following table the **My Use** column:
-- V - connect through to Vision-AI V2
-- E - connect to my Skull-Eyeball project (https://github.com/Mark-MDO47/Skull-Project)
+- V - connect through header to Vision-AI V2
+- E - connect externally to my Skull-Eyeball project (https://github.com/Mark-MDO47/Skull-Project)
 - X - reserve for future use external to Vision-AI V2
 
 | My Use | XIAO pin | XIAO usage | HX6538-A usage | HX Reset | HX pin |
