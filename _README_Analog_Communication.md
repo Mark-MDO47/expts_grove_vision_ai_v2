@@ -117,7 +117,7 @@ Note: When the Peripheral Touch Controller (PTC) is enabled, ADC0 is serving the
 
 ### HalloWing M4 Express Pins to Use
 [Top](#readme-\--analog-communication "Top")<br>
-Near the on/off switch there are touch pads labeled A2 through A5. I will use A3 and A4.
+Near the on/off switch there are touch pads labeled A2 through A5. I will use A3 and A4, but connect through the header.
 - https://learn.adafruit.com/adafruit-hallowing-m4/pinouts
 
 A2 is used for a touch control, the so-called "boop" button that causes the eyes to cross.
@@ -142,3 +142,12 @@ static inline uint16_t readBoop(void) {
 A3 through A5 are available for use; I will use A3 and A4.
 
 This leaves A5 available if I want to do something with blinking (blinkPin).
+
+### HalloWing M4 Express AREF
+[Top](#readme-\--analog-communication "Top")<br>
+On the HalloWing M4 Express, the AREF is not hard-jumpered to the internal 3.3V, so the external AREF pin can be used.
+
+Normal analogRead() will use the internal 3.3V. I power them through the USB port so this is probably good enough, but we will see.
+
+To use the ARef pin for a non-3.3V analog reference, the code to use is analogReference(AR_EXTERNAL) (it's AR_EXTERNAL not EXTERNAL)
+- see note in https://learn.adafruit.com/adafruit-hallowing-m4?view=all
