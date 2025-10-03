@@ -1,4 +1,8 @@
 # README - Hardware
+This contains information about the new AI Vision sytem being added to the Skull Project.
+
+For information about the Skull Project and its Adafruit HalloWing M4 Express using the ATSAMD51 MCU
+- https://github.com/Mark-MDO47/Skull-Project
 
 **Table Of Contents**
 * [Top](#readme-\--hardware "Top")
