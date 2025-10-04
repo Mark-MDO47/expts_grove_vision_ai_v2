@@ -38,3 +38,7 @@ The result of all that is:
   - Thus there will be approximately 32 discrete levels of analog voltage for each pixel in each direction
     - That is a little overkill, but the key factor is 5 kHz which provides stability for the analog voltages
   - My first cut will be to use the HalloWing M4 Express internal 3.3V reference, but it is possible to use the external AREF pin.
+
+## Preliminary Schematic
+[Top](#experiment-01-\--face-following "Top")<br>
+<img src="https://github.com/Mark-MDO47/expts_grove_vision_ai_v2/blob/master/resources/images/01_face_xiao_vision_v2_schem.jpg" width="800" alt="Schematic for Experiment 01 Face Detection">
