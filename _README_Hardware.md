@@ -67,22 +67,22 @@ In the following table the **My Use** column:
 - E - connect externally to my Skull-Eyeball project (https://github.com/Mark-MDO47/Skull-Project)
 - X - reserve for future use external to Vision-AI V2
 
-| My Use | XIAO pin | XIAO usage | HX6538-A usage | HX Reset | HX pin |
+| My Use | XIAO pin/GPIO | XIAO usage | HX6538-A usage | HX Reset | HX pin |
 | --- | --- | --- | --- | --- | --- |
-| X | D0/A0 #1 | Dig/Ana | GP I/O FS PL AON 3.3V-OK  | On-Rst-Inp PL |  PA0 #18 |
-| E | D1/A1 #2 | Dig/Ana | GP I/O FS PL 3.3V-OK | On-Rst-Inp PL | PB11 #46 |
-| E | D2/A2 #3 | Dig/Ana | GP I/O FS PL 3.3V-OK | On-Rst-Inp PL | PB8 #94 |
-| V | D3/A3 #4 | Dig/C3-NOT-Ana | On-Rst-LO I FS PH AON 3.3V-OK | N/A | RESETN #17 |
-| X | D4/SDA #5 | Dig/IIC | GP/IIC-SDA I/O FS  | On-Rst-Inp PH | PA3 #24 |
-| X | D5/SCL #6 | Dig/IIC | GP/IIC-SCL I/O FS | On-Rst-Inp PH | PA2 #23 |
-| V | D6/TX #7 | Dig/UART | GP/UART-RX I/O FS PL 3.3V-OK | On-Rst-Inp PL | PB6 #92 |
-| V | D7/RX #8 | Dig/UART | GP/UART-TX I/O FS PL 3.3V-OK | On-Rst-Inp PL | PB7 #93 |
-| X | D8/SCK #9 | Dig/SPI | GP/SPI-SCLK I/O FS PL 3.3V-OK | On-Rst-Inp PL | PB4 #74 |
-| X | D9/MISO #10 | Dig/SPI | GP/SPI-IN-D1 I/O FS PL 3.3V-OK | On-Rst-Inp PL | PB3 #73 |
-| X | D10/MOSI/DAC #11 | Dig/SPI/DAC | GP/SPI-IN-D0 I/O FS PL 3.3V-OK | On-Rst-Inp PL | PB2 #72 |
-| V | 3V3 #12 | Pwr | N/A Pwr Imax=600mA | N/A | N/A |
-| V | GND #13 | Pwr | N/A Pwr | N/A | N/A |
-| V | VUSB #14 | Pwr | N/A Pwr input either Vision USB or XIAO USB | N/A | N/A |
+| X | D0/A0 #1/GPIO-2 | Dig/Ana | GP I/O FS PL AON 3.3V-OK  | On-Rst-Inp PL |  PA0 #18 |
+| E | D1/A1 #2/GPIO-3 | Dig/Ana | GP I/O FS PL 3.3V-OK | On-Rst-Inp PL | PB11 #46 |
+| E | D2/A2 #3/GPIO-4 | Dig/Ana | GP I/O FS PL 3.3V-OK | On-Rst-Inp PL | PB8 #94 |
+| V | D3/A3 #4/GPIO-5 | Dig/C3-NOT-Ana | On-Rst-LO I FS PH AON 3.3V-OK | N/A | RESETN #17 |
+| X | D4/SDA #5/GPIO-6 | Dig/IIC | GP/IIC-SDA I/O FS  | On-Rst-Inp PH | PA3 #24 |
+| X | D5/SCL #6/GPIO-7 | Dig/IIC | GP/IIC-SCL I/O FS | On-Rst-Inp PH | PA2 #23 |
+| V | D6/TX #7/GPIO-21 | Dig/UART | GP/UART-RX I/O FS PL 3.3V-OK | On-Rst-Inp PL | PB6 #92 |
+| V | D7/RX #8/GPIO-20 | Dig/UART | GP/UART-TX I/O FS PL 3.3V-OK | On-Rst-Inp PL | PB7 #93 |
+| X | D8/SCK #9/GPIO-8 | Dig/SPI | GP/SPI-SCLK I/O FS PL 3.3V-OK | On-Rst-Inp PL | PB4 #74 |
+| X | D9/MISO #10/GPIO-9 | Dig/SPI | GP/SPI-IN-D1 I/O FS PL 3.3V-OK | On-Rst-Inp PL | PB3 #73 |
+| X | D10/MOSI/DAC #11/GPIO-10 | Dig/SPI/DAC | GP/SPI-IN-D0 I/O FS PL 3.3V-OK | On-Rst-Inp PL | PB2 #72 |
+| V | 3V3 #12/N/A | Pwr | N/A Pwr Imax=600mA | N/A | N/A |
+| V | GND #13/N/A | Pwr | N/A Pwr | N/A | N/A |
+| V | VUSB #14/N/A | Pwr | N/A Pwr input either Vision USB or XIAO USB | N/A | N/A |
 
 Notes: 
 - Pin Types:
