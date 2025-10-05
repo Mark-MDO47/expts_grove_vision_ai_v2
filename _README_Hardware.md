@@ -92,7 +92,7 @@ Notes:
 - Pin Domains:
   - SIF =1.8V only, PIF =1.8V or AON =1.8V or 3.3V (always on)
 - GND:
-  - Instead of pulling ground to external and Vision-AI from the pin on this connector, I plan to power via XIAO USB and distribute ground from there
+  - Instead of pulling ground to external and Vision-AI from the pin on this connector, I plan to power via XIAO USB and distribute ground from there or else connect it through the Grove connector on the Vision-AI V2.
 
 ## Future Possibilities
 [Top](#readme-\--hardware "Top")<br>
