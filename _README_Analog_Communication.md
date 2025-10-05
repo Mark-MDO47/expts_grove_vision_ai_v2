@@ -84,7 +84,7 @@ My goals are
 - At least 4*240 = 960 discrete levels of analog signal. Less than 1024 (nearest higher power of 2).
 - Use highest practical PWM frequency that supports this so that low-pass filter removes most of the extraneous energy.
 
-Since 5 kHz seems like a practical upper limit on PWM frequency for stability and that provides 8192 discrete levels, I will use 5 kHz frequency.
+Since 5 kHz seems like a practical upper limit on PWM frequency for stability and that provides 4096 discrete levels, I will use 5 kHz frequency.
 
 ### HalloWing M4 Express SAMD51 Reads the Analog Signal
 [Top](#readme-\--analog-communication "Top")<br>
