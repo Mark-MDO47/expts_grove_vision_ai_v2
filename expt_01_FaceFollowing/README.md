@@ -29,13 +29,13 @@ Of course it is not that easy. For details of how I came up with my plan, see th
 The result of all that is:
 - XIAO ESP32-C3 attached to Vision-AI V2 will report data for one face detection as analog voltages on XIAO pins A2 and A2
   - Will use ESP32 LEDC PWM library running at 5 kHz feeding into a low-pass R-C filter
-    - Approximately 8192 discrete levels of analog voltage (13 bits)
+    - Approximately 4096 discrete levels of analog voltage (12 bits)
     - Filter Cutoff Frequency (-3dB)	31.8 Hz
     - Filter Time Constant	5 milliSec
 - Analog signals will go to both HalloWing M4 Express on pins A3 and A4
   - The ATSAMD51 will sample the analog signals periodically, without interruption to its processing
   - The HalloWing M4 Express has a 1.54" display 240x240 full color IPS TFT
-  - Thus there will be approximately 32 discrete levels of analog voltage for each pixel in each direction
+  - Thus there will be approximately 16 discrete levels of analog voltage for each pixel in each direction
     - That is a little overkill, but the key factor is 5 kHz which provides stability for the analog voltages
   - My first cut will be to use the HalloWing M4 Express internal 3.3V reference, but it is possible to use the external AREF pin.
 
