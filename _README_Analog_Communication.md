@@ -93,6 +93,10 @@ My goals are
 
 Since 5 kHz seems like a practical upper limit on PWM frequency for stability and that provides 4096 discrete levels, I will use 5 kHz frequency.
 
+**Usage**
+With 12-bit control of the PWM analog output I can set it to 0 through 4095. The effective range to cover the Eye LED screen is 0 through 3839.<br>
+When there is no face detected I will wait some set amount then set the output to 4095 to flag that no face is detected.
+
 ### HalloWing M4 Express SAMD51 Reads the Analog Signal
 [Top](#readme-\--analog-communication "Top")<br>
 Information from SAM_D5x_E5x_DataSheet_60001507E.pdf - http://ww1.microchip.com/downloads/en/DeviceDoc/60001507E.pdf
