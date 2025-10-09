@@ -60,7 +60,7 @@ My goal in using the PWM is twofold:
 - enough "analog" capability to have 4 times the resolution as pixels in each direction
 - within the above constraint, use the highest frequency PWM so that much extraneous energy is removed by the low-pass filter
 
-Here are some Oscilloscope captures of an experimental setup of the XIAO ESP32-C3 PWM Analog Output with Low Pass Filter as defined above.
+Here are some Oscilloscope captures of an experimental setup of the XIAO ESP32-C3 PWM Analog Output with Low Pass Filter as defined above. The only load is the scope probe.
 
 | Photo | Photo |
 | --- | --- |
