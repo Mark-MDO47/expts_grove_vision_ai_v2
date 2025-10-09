@@ -60,6 +60,13 @@ My goal in using the PWM is twofold:
 - enough "analog" capability to have 4 times the resolution as pixels in each direction
 - within the above constraint, use the highest frequency PWM so that much extraneous energy is removed by the low-pass filter
 
+Here are some Oscilloscope captures of an experimental setup of the XIAO ESP32-C3 PWM Analog Output with Low Pass Filter as defined above.
+
+| Photo | Photo |
+| --- | --- |
+| 100% Rise<br><img src="https://github.com/Mark-MDO47/expts_grove_vision_ai_v2/blob/master/resources/images/LowPass_100pctRise.jpg" width="400" alt="XIAO ESP32-C3 PWM Analog Output with Low Pass Filter - 100% Rise"> | 100% Fall<br><img src="https://github.com/Mark-MDO47/expts_grove_vision_ai_v2/blob/master/resources/images/LowPass_100pctFall.jpg" width="400" alt="XIAO ESP32-C3 PWM Analog Output with Low Pass Filter - 100% Fall"> |
+| 25% Rise<br><img src="https://github.com/Mark-MDO47/expts_grove_vision_ai_v2/blob/master/resources/images/LowPass_25pctRise.jpg" width="400" alt="XIAO ESP32-C3 PWM Analog Output with Low Pass Filter - 25% Rise"> | Experimental Setup<br><img src="https://github.com/Mark-MDO47/expts_grove_vision_ai_v2/blob/master/resources/images/LowPass_ExptSetup.jpg" width="400" alt="XIAO ESP32-C3 PWM Analog Output with Low Pass Filter - Experimental Setup"> |
+
 ### PWM Frequency and Signal Accuracy
 [Top](#readme-\--analog-communication "Top")<br>
 Did a little more Google search
