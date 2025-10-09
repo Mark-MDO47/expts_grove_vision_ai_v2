@@ -99,7 +99,7 @@ Notes:
 Future plans may include a display to show the image, maybe using the ESP32-2432S028R (Cheap Yellow Display or CYD) based on ESP32-D0WDQ6 controller instead of the XIAO ESP32-C3
 - https://www.aliexpress.us/item/3256805697430313.html
 - Would need to transfer image
-  - maybe via I2C or UART
+  - UART is faster than I2C
     - https://wiki.seeedstudio.com/grove_vision_ai_v2_rs485/
     - https://wiki.seeedstudio.com/grove_vision_ai_v2_at/
     - https://wiki.seeedstudio.com/grove_vision_ai_v2_at/#base64tojpeg
