@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "https://github.com/Mark-MDO47/expts_grove_vision_ai_v2")
-		(date "2025-10-04")
+		(date "2025-10-10")
 		(company "Self: https://github.com/Mark-MDO47")
 	)
 	(lib_symbols
@@ -1752,6 +1752,30 @@
 			)
 		)
 		(uuid "05645354-150b-423d-a363-afc57956168c")
+	)
+	(text "+"
+		(exclude_from_sim no)
+		(at 154.94 126.238 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+		)
+		(uuid "52c8ea23-580f-4731-8c26-6d68f839a10e")
+	)
+	(text "+"
+		(exclude_from_sim no)
+		(at 167.64 126.238 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+		)
+		(uuid "58fc5c6e-8619-4078-a502-958d5b92eabb")
 	)
 	(junction
 		(at 168.91 118.11)

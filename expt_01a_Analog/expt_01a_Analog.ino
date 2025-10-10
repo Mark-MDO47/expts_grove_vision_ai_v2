@@ -54,8 +54,8 @@ pwm_led_ptrn_step pwm_ptrn_open_eye[] = {
 };
 
 pwm_led_ptrn_step pwm_ptrn_blink[] = { 
-  { .start_set_pwm=0,                      .step_incr=1,  .step_time=450, .tick_time=5, .tick_pwm= 0},
-  { .start_set_pwm=LED_PINS_PWM_MAX_VALUE, .step_incr=-1, .step_time=450, .tick_time=5, .tick_pwm= 0}
+  { .start_set_pwm=1024,  .step_incr=1,  .step_time=450, .tick_time=5, .tick_pwm= 0},
+  { .start_set_pwm=2048,  .step_incr=-1, .step_time=450, .tick_time=5, .tick_pwm= 0}
 };
 
 uint32_t g_eyes_bright; // MS-16bits is <num>, LS-16bits is <den> for last call to led_pin_pwm_set_pwm_scale()
@@ -98,18 +98,16 @@ void loop() {
     // this section executes every 10 seconds
 
     // it is optional to adjust global scaling while operating LEDs but we demonstrate it here
-    led_pin_pwm_set_pwm_scale(0x00010005); // this is a good max brightness in my breadboard setup; could have been done is setup()
-    // commented out below is a way to adjust the brightness to fade away
-    //    this would set pwm global scaling to 1/1, 1/2, 1/3, 1/4, ... 1/(n)
-    // led_pin_pwm_set_pwm_scale(((uint32_t)(0x00010000))1 | ((uint32_t)ten_secs));
+    led_pin_pwm_set_pwm_scale(0x00010001); // one-to-one to get full range; could have been done in setup()
 
     // it is optional to change LED pattern while operating LEDs but we demonstrate it here
     // pattern changes every 10 seconds
-    if (pwm_ptrn_open_eye != prev_ptrn_ptr) prev_ptrn_ptr = pwm_ptrn_open_eye;
-    else                                    prev_ptrn_ptr = pwm_ptrn_blink;
+    // if (pwm_ptrn_open_eye != prev_ptrn_ptr) prev_ptrn_ptr = pwm_ptrn_open_eye;
+    // else                                    prev_ptrn_ptr = pwm_ptrn_blink;
+    prev_ptrn_ptr = pwm_ptrn_blink;
     for (int pin_idx = 0; pin_idx < NUMOF(g_pwm_pin_info); pin_idx += 1) {
       // commented out time scale manipulation would make pins operate on different time scales
-      led_pin_pwm_init_ptrn(pin_idx, prev_ptrn_ptr, 0, TIME_SCALE_EQUAL /* + pin_idx*2 */, 0);
+      led_pin_pwm_init_ptrn(pin_idx, prev_ptrn_ptr, 0, TIME_SCALE_EQUAL /* + pin_idx*2 */, 1); // 1 = debug on
     } // end for each pin_idx
     
     first_time = 0; // first_time only once
