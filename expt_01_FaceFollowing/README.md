@@ -24,7 +24,7 @@ Because the Skull Project eyes are pretty busy just displaying the eyes, I don't
 ## Did Nobody Mention there would be Problems with Analog Signals?
 [Top](#experiment-01-\--face-following "Top")<br>
 Of course it is not that easy. For details of how I came up with my plan, see the following
-- https://github.com/Mark-MDO47/expts_grove_vision_ai_v2/blob/master/expt_01a_Analog/expt_01a_Analog.ino
+- https://github.com/Mark-MDO47/expts_grove_vision_ai_v2/blob/master/expt_01a_Analog/README.md
 
 The result of all that is:
 - XIAO ESP32-C3 attached to Vision-AI V2 will report data for one face detection as analog voltages on XIAO pins A2 and A2
