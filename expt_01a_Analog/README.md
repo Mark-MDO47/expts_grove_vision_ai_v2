@@ -161,9 +161,8 @@ This leaves A5 available if I want to do something with blinking (blinkPin).
 
 ### HalloWing M4 Express AREF
 [Top](#readme-\--analog-communication "Top")<br>
-On the HalloWing M4 Express, the AREF is not hard-jumpered to the internal 3.3V, so the external AREF pin can be used.
+On the HalloWing M4 Express, the AREF is not hard-jumpered to the internal 3.3V, so the external AREF pin could be used.
+- Normal analogRead() will use the internal 3.3V. I power them through the USB port so this is probably good enough, but we will see.
 
-Normal analogRead() will use the internal 3.3V. I power them through the USB port so this is probably good enough, but we will see.
-
-To use the ARef pin for a non-3.3V analog reference, the code to use is analogReference(AR_EXTERNAL) (it's AR_EXTERNAL not EXTERNAL)
+If we need to use the ARef pin for a non-3.3V analog reference, the code to use is analogReference(AR_EXTERNAL) (it's AR_EXTERNAL not EXTERNAL)
 - see note in https://learn.adafruit.com/adafruit-hallowing-m4?view=all
