@@ -281,9 +281,9 @@ The Skull Project uses eyes made from Adafruit HalloWing M4 Express. These use t
 
 Because the Skull Project eyes are pretty busy just displaying the eyes, I don't want to interrupt them at random times with an I2C or UART message. Thus I plan to output the position information on two ESP32-C3 Analog channels, and the SAMD51 in the eyes can sample the information at any convenient time that doesn't interrupt its processing.
 
-I just realized I was looking at the Analog-to-Digital capabilities (ADC for analog input) instead of the Digital-to-Analog capabilities. The XIAO ESP32-C3 only has D10 with DAC.
+I want to communicate X and Y position on two separate analog outputs from the XIAO ESP32-C3 but it only has one actual DAC output pin (D10).
 
-I will start by using the ESP32 LEDC library for analog output; that way I can use the same code for both analog outputs. I may need to implement filtering on the analog outputs so the SAMD51 can do reliable sensing.
+I will use the ESP32 LEDC library for analog output; that way I can use the same code for both analog outputs. I need to implement filtering on the analog outputs so the SAMD51 can do reliable sensing.
 
 I previously did LEDC analog outputs in my https://github.com/Mark-MDO47/DuelWithBanjos project. I didn't need any analog filtering with the LED outputs. Analog is filtering definitely needed for this application. More detail here:
 - https://github.com/Mark-MDO47/expts_grove_vision_ai_v2/blob/master/expt_01a_Analog/README.md
