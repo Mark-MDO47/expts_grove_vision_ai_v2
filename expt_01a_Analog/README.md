@@ -37,7 +37,7 @@ Surprise (to me) - The ESP32-C3 has only one analog output. It uses PWM to appro
 - I realized I was looking at the Analog-to-Digital capabilities (ADC for analog input) instead of the Digital-to-Analog capabilities. The XIAO ESP32-C3 only has D10 with DAC.
 - I want to communicate X and Y position on two separate analog outputs from the XIAO ESP32-C3 but it only has one actual DAC output pin (D10).
 - I will use the ESP32 LEDC library for analog output; that way I can use the same code for both analog outputs. I need to implement filtering on the analog outputs so the SAMD51 can do reliable sensing.
-- I will start by using the ESP32 LEDC library for analog output; that way I can use the same code for both analog outputs. I may need to implement filtering on the analog outputs so the SAMD51 can do reliable sensing.
+- I will start by using the ESP32 LEDC library for analog output; that way I can use the same code for both analog outputs. I need to implement filtering on the analog outputs so the SAMD51 can do reliable sensing.
 - I previously did LEDC analog outputs in my https://github.com/Mark-MDO47/DuelWithBanjos project. I didn't need any filtering with the LED outputs.
 
 ### Parameters for a good Low Pass Filter
