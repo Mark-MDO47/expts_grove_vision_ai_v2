@@ -130,6 +130,17 @@ Note: When the Peripheral Touch Controller (PTC) is enabled, ADC0 is serving the
   - https://github.com/Mark-MDO47/mdo_m4_eyes
 - the bulk of my mods is in mdo_skull_project.cpp
 
+### HalloWing M4 Express Method To Read Analog Signal
+[Top](#readme-\--analog-communication "Top")<br>
+Sequence:
+- user_setup()
+  - pinMode(analogPin, INPUT); // Set pin as input (necessary even for analogRead) - set pin as INPUT
+  - analogReadResolution(16)l  // lower bits set to zero. If runs later on chip with higher resolution (up to 16), no change needed
+- user_loop()
+  - value = analogRead(analogPin); // 0 to 3.3V in 4096 steps for 12-bit
+
+Seems like that needs to be stored into globals eyeTargetX and eyeTargetY. These are float, Range is from -1.0 to +1.0.
+
 ### HalloWing M4 Express Pins to Use
 [Top](#readme-\--analog-communication "Top")<br>
 Near the on/off switch there are touch pads labeled A2 through A5. I will use A3 and A4, but connect through the header.
