@@ -10,6 +10,7 @@ In these experiments I will communicate location data from an XAIO ESP32-C3 to t
   * [PWM Frequency and Signal Accuracy](#pwm-frequency-and-signal-accuracy "PWM Frequency and Signal Accuracy")
   * [HalloWing M4 Express Display and Frequency and Resolution](#hallowing-m4-express-display-and-frequency-and-resolution "HalloWing M4 Express Display and Frequency and Resolution")
   * [HalloWing M4 Express SAMD51 Reads the Analog Signal](#hallowing-m4-express-samd51-reads-the-analog-signal "HalloWing M4 Express SAMD51 Reads the Analog Signal")
+  * [HalloWing M4 Express Method To Read Analog Signal](#hallowing-m4-express-method-to-read-analog-signal "HalloWing M4 Express Method To Read Analog Signal")
   * [HalloWing M4 Express Pins to Use](#hallowing-m4-express-pins-to-use "HalloWing M4 Express Pins to Use")
   * [HalloWing M4 Express AREF](#hallowing-m4-express-aref "HalloWing M4 Express AREF")
 
