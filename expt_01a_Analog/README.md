@@ -28,13 +28,15 @@ The Skull Project uses eyes made from Adafruit HalloWing M4 Express. These use t
 - http://ww1.microchip.com/downloads/en/DeviceDoc/60001507E.pdf
 
 Because the Skull Project eyes are pretty busy just displaying the eyes, I don't want to interrupt them at random times with an I2C or UART message. Thus I plan to output the position information on two ESP32-C3 Analog channels, and the SAMD51 in the eyes can sample the information at any convenient time that doesn't interrupt its processing.
+- Note - user_loop() is called (according to code comments) during an 'SPI "quiet time"' so 'it's OK to do I2C or other communication'. However, I am a belt-and-suspenders sort of person (I call it software robustness) so I take that comment with a grain of salt. ... and look at some scars from previous projects and feel smug.
+- Plus I have used I2C and UART for micro-to-micro communication and will enjoy trying analog.
 
 ## Low-Pass Filter for ESP32-C3 PWM Analog
 [Top](#readme-\--analog-communication "Top")<br>
 
 ### ESP32-C3 does not have Analog Outputs
 [Top](#readme-\--analog-communication "Top")<br>
-Surprise (to me) - The ESP32-C3 has only one analog output. It uses PWM to approximate analog outputs.
+Surprise (to me) - The ESP32-C3 has only one analog output. It uses PWM to approximate analog subsequent pin outputs.
 - I realized I was looking at the Analog-to-Digital capabilities (ADC for analog input) instead of the Digital-to-Analog capabilities. The XIAO ESP32-C3 only has D10 with DAC.
 - I want to communicate X and Y position on two separate analog outputs from the XIAO ESP32-C3 but it only has one actual DAC output pin (D10).
 - I will use the ESP32 LEDC library for analog output; that way I can use the same code for both analog outputs. I need to implement filtering on the analog outputs so the SAMD51 can do reliable sensing.
@@ -177,3 +179,59 @@ On the HalloWing M4 Express, the AREF is not hard-jumpered to the internal 3.3V,
 
 If we need to use the ARef pin for a non-3.3V analog reference, the code to use is analogReference(AR_EXTERNAL) (it's AR_EXTERNAL not EXTERNAL)
 - see note in https://learn.adafruit.com/adafruit-hallowing-m4?view=all
+
+### HalloWing M4 Express - but where does it go?
+[Top](#readme-\--analog-communication "Top")<br>
+Looks like they have some code that uses eyeTargetX and -Y
+```
+$ grep -i  eyeTarget *
+globals.h:GLOBAL_VAR float     eyeTargetX          GLOBAL_INIT(0.0);  // Then set these continuously in user_loop.
+globals.h:GLOBAL_VAR float     eyeTargetY          GLOBAL_INIT(0.0);  // Range is from -1.0 to +1.0.
+mdo_m4_skull_project.ino:        eyeX = mapRadius + eyeTargetX * r;
+mdo_m4_skull_project.ino:        eyeY = mapRadius + eyeTargetY * r;
+user_watch.cpp:  eyeTargetX = heatSensor.x;
+user_watch.cpp:  eyeTargetY = -heatSensor.y;
+```
+
+Looking nearby I see in **mdo_m4_skull_project.ino**
+```C
+      // Eye movement
+      float eyeX, eyeY;
+      if(moveEyesRandomly) {
+        <<< a boatload of code >>>
+      } else {
+        // Allow user code to control eye position (e.g. IR sensor, joystick, etc.)
+        float r = ((float)mapDiameter - (float)DISPLAY_SIZE * M_PI_2) * 0.9;
+        eyeX = mapRadius + eyeTargetX * r;
+        eyeY = mapRadius + eyeTargetY * r;
+      }
+```
+
+And looking one step further
+```
+$ grep moveEyesRandomly *
+grep: eyes: Is a directory
+globals.h:GLOBAL_VAR bool      moveEyesRandomly    GLOBAL_INIT(true);   // Clear to suppress random eye motion and let user code control it
+mdo_m4_skull_project.ino:      if(moveEyesRandomly) {
+user_watch.cpp:  moveEyesRandomly = false;
+```
+
+In **user_watch.cpp**
+```C
+void user_setup(void) {
+  showSplashScreen = false;
+  moveEyesRandomly = false;
+  heatSensor.setup();
+}
+
+<<< >>>
+
+void user_loop(void) {
+  // Estimate the focus position.
+  heatSensor.find_focus();
+
+  // Set values for the new X and Y.
+  eyeTargetX = heatSensor.x;
+  eyeTargetY = -heatSensor.y;
+}
+```
