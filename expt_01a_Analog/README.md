@@ -139,11 +139,11 @@ Note: When the Peripheral Touch Controller (PTC) is enabled, ADC0 is serving the
 Sequence:
 - user_setup()
   - pinMode(analogPin, INPUT); // Set pin as input (necessary even for analogRead) - set pin as INPUT
-  - analogReadResolution(16)l  // lower bits set to zero. If runs later on chip with higher resolution (up to 16), no change needed
+  - analogReadResolution(16);  // lower bits set to zero. If runs later on chip with higher ADC resolution (up to 16), no change needed
 - user_loop()
-  - value = analogRead(analogPin); // 0 to 3.3V in 4096 steps for 12-bit
+  - value = analogRead(analogPin); // 0 to 3.3V in range: 0-65535
 
-Seems like that needs to be stored into globals eyeTargetX and eyeTargetY. These are float, Range is from -1.0 to +1.0.
+Seems like that information needs to be formatted and stored into globals eyeTargetX and eyeTargetY. These are float, Range is from -1.0 to +1.0.
 
 ### HalloWing M4 Express Pins to Use
 [Top](#readme-\--analog-communication "Top")<br>
