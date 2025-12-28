@@ -13,6 +13,7 @@ In these experiments I will communicate location data from an XAIO ESP32-C3 to t
   * [HalloWing M4 Express Method To Read Analog Signal](#hallowing-m4-express-method-to-read-analog-signal "HalloWing M4 Express Method To Read Analog Signal")
   * [HalloWing M4 Express Pins to Use](#hallowing-m4-express-pins-to-use "HalloWing M4 Express Pins to Use")
   * [HalloWing M4 Express AREF](#hallowing-m4-express-aref "HalloWing M4 Express AREF")
+  * [HalloWing M4 Express - but where does it go?](#hallowing-m4-express-\--but-where-does-it-go "HalloWing M4 Express - but where does it go?")
 
 ## Useful Documentation
 [Top](#readme-\--analog-communication "Top")<br>
