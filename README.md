@@ -285,5 +285,5 @@ I want to communicate X and Y position on two separate analog outputs from the X
 
 I will use the ESP32 LEDC library for analog output; that way I can use the same code for both analog outputs. I need to implement filtering on the analog outputs so the SAMD51 can do reliable sensing.
 
-I previously did LEDC analog outputs in my https://github.com/Mark-MDO47/DuelWithBanjos project. I didn't need any analog filtering with the LED outputs. Analog is filtering definitely needed for this application. More detail here:
+I previously did LEDC analog outputs in my https://github.com/Mark-MDO47/DuelWithBanjos project. I didn't need any analog filtering with the LED outputs. Analog filtering is definitely needed for this application. More detail here:
 - https://github.com/Mark-MDO47/expts_grove_vision_ai_v2/blob/master/expt_01a_Analog/README.md
